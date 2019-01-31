@@ -11,3 +11,17 @@ a#linkBtn1{
 a#linkBtn2{
     cursor: pointer;
 }
+h3{
+    font-family: 'Indie Flower', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+    button.mat-icon-button{
+        left: 85%;
+    }
+    a#linkBtn1{
+        left: 17%;
+        top: 8%;
+    }
+  }
+

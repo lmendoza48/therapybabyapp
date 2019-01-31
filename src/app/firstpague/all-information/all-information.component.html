@@ -9,12 +9,12 @@
             <mat-card-title>{{cList.title}}</mat-card-title>
           </mat-card-header>
           <mat-card-content>
-            <p style="text-align: center;" >
-               {{cList.alltext }}
+            <p style="text-align: justify;" >
+               {{cList.alltext | slice:0:50}}...
             </p>
           </mat-card-content>
           <mat-card-actions align="right">
-            <button mat-button (click) = "onItemClick(cList)" >Ver Mas</button>
+            <button mat-button   color="accent" (click) = "onItemClick(cList)" >Ver Mas</button>
           </mat-card-actions>
         </mat-card>
   </div>

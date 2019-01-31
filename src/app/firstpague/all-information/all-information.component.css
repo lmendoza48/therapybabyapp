@@ -11,3 +11,6 @@ mat-form-field.example-full-width{
     float: left;
     height: 10rem;
  }
+ div.container{
+   margin-left: 2%;
+ }
