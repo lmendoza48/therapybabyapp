@@ -1,16 +1,64 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 import { AppComponent } from './app.component';
+import { FirstpagueComponent } from './firstpague/firstpague.component';
+import { MaterialComponent } from './angularMaterial/material.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactUsComponent } from './firstpague/contact-us/contact-us.component';
+import { HomeComponent } from './firstpague/home/home.component';
+import { MoreInformationComponent } from './firstpague/more-information/more-information.component';
+import { MessagesDatosService } from './services/messages-datos.service';
+import { AllInformationComponent } from './firstpague/all-information/all-information.component';
+import { environment } from 'src/environments/environment';
+
+const routes : Routes = [
+  {
+    path:'',
+    component: HomeComponent
+  },
+  {
+    path:'contactus',
+    component: ContactUsComponent
+  },
+  {
+    path:'information',
+    component: MoreInformationComponent
+  },
+  {
+    path:'allInformation',
+    component: AllInformationComponent
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstpagueComponent,
+    ContactUsComponent,
+    HomeComponent,
+    MoreInformationComponent,
+    AllInformationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterialComponent,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.configFirebase),
+    AngularFireDatabaseModule,
+    RouterModule.forRoot(routes),
+    FormsModule,
+    HttpClientModule,
+    Ng2SearchPipeModule
   ],
-  providers: [],
+  providers: [MessagesDatosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

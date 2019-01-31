@@ -1,0 +1,13 @@
+mat-form-field.example-full-width{
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 35%;
+ }
+
+ .example-card{
+    width: 18rem;
+    margin: 0.5rem;
+    float: left;
+    height: 10rem;
+ }

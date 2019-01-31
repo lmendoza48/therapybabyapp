@@ -1,0 +1,27 @@
+.example-card {
+    position: absolute;
+    left: 27%;
+    top: 31%;
+    width: 600px;
+    margin-bottom: 3%;
+}
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+div.titleChildren{
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: -webkit-xxx-large;
+    text-align: -webkit-center;
+}
+img.imgTitleChildren{
+    position: absolute;
+    bottom: 72%;
+    left: 65%;
+    width: 3%;
+}
+mat-card-content p {
+    text-align: justify;
+    font-family: 'KoHo', sans-serif;
+    font-size: medium;
+}

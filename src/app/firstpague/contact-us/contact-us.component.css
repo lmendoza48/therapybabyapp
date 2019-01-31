@@ -1,0 +1,18 @@
+.example-form{
+    display: flex;
+    flex-direction: column;
+}
+.card-example{
+    width: 70%;
+    margin-top: 3%;
+    position: absolute;
+    right: 5%;
+}
+.example-container {
+    height: 37rem;
+  }
+.mat-drawer.mat-drawer-side {
+    width: 50%;
+    background-image: url("../../img/children.jpg");
+    background-size: cover;
+}

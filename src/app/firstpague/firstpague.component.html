@@ -1,0 +1,27 @@
+<mat-toolbar color="accent">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <i class="material-icons"> list</i>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink = "/">
+          <mat-icon>home</mat-icon>
+          <span>Inicio</span>
+    </button>
+    <button mat-menu-item routerLink = "/allInformation">
+      <mat-icon>description</mat-icon>
+      <span>Información</span>
+    </button>
+    <!--<button mat-menu-item>
+      <mat-icon>business_center</mat-icon>
+      <span>Producto y Servicios</span>
+    </button> -->
+    <button mat-menu-item routerLink = "/contactus">
+      <mat-icon>perm_contact_calendar</mat-icon>
+      <span>Contacto</span>
+    </button>
+  </mat-menu> 
+  <h3>Children&Therapy</h3>
+  <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/material/24/000000/instagram-new.png"></a>
+  <mat-icon id="linkBtn2" matBadgeOverlap="false"> <img src="https://img.icons8.com/material/24/000000/facebook.png"> </mat-icon>  
+</mat-toolbar>
+<router-outlet></router-outlet>
