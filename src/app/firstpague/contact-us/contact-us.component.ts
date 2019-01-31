@@ -21,6 +21,7 @@ export class ContactUsComponent implements OnInit {
 
   onSendEMail(form : NgForm){
       this.dataServiceMessage.insertDataMessage(form.value);
+      form.reset();
   }
 
   /*
