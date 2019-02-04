@@ -28,7 +28,6 @@ export class AllInformationComponent implements OnInit {
   }
 
   onItemClick(data : Datatext){
-      console.log('datos' + data);
       sessionStorage.setItem('dato',  data.alltext);
       sessionStorage.setItem('tittle',  data.title);
       this.router.navigate(['/information']);

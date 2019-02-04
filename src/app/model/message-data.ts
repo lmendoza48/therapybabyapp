@@ -5,4 +5,5 @@ export class MessageData {
     mail : string;
     day : number;
     name : string;
+    flag : boolean;
 }

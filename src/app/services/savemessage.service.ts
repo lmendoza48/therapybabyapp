@@ -20,12 +20,13 @@ export class SavemessageService {
   insertDataMessage(data : MessageData){
        var dateD = Date.now();
        data.day = dateD;
-       data.title = data.name + ", " + data.title
+       data.title = data.name + ", " + data.title;
        this.message.push({
           title : data.title,
           alltext : data.alltext,
           mail : data.mail,
-          day : data.day
+          day : data.day,
+          flag : true,
        })
   }
 
