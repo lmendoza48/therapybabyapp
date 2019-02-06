@@ -1,7 +1,15 @@
 .info-card2{
-    width: 35%;
-    margin-top: 3%;
-    position: absolute;
+    position: relative;
     left: 30%;
+    width: 35%;
+    margin-top: 9%;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .info-card2{
+        left: 5%;
+        width: 81%;
+        margin-top: 25%;
+    }
+}

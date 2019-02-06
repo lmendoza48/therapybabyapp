@@ -1,27 +1,57 @@
-button.mat-icon-button{
+.sidenav-container{
     position: absolute;
-    left: 95%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+mat-sidenav.mat-drawer.mat-sidenav{
+    width: 20%;
+}
+.mat-nav-list{
+    padding-top: 25%
 }
 a#linkBtn1{
     cursor: pointer;
     position: relative;
-    left: 5%;
+    left: 80%;
     top: 7%;
 }
 a#linkBtn2{
     cursor: pointer;
+    position: relative;
+    left: 75%;
+    top: 7%;
 }
-h3{
+span h3{
     font-family: 'Indie Flower', cursive;
+}
+div.dd{
+    margin-top: 8%;
+}
+
+mat-toolbar{
+    position: fixed;
+    z-index: 10000;
 }
 
 @media only screen and (max-width: 600px) {
-    button.mat-icon-button{
-        left: 85%;
+    mat-sidenav.mat-drawer.mat-sidenav[_ngcontent-c1] {
+        width: 45%;
     }
     a#linkBtn1{
-        left: 17%;
+        left: 38%;
         top: 8%;
+    }
+    a#linkBtn2{
+        left: 21%;
+        top: 8%;
+    }
+    div.dd{
+        margin-top: 20%;
+    }
+    .mat-nav-list{
+        padding-top: 33%
     }
   }
 

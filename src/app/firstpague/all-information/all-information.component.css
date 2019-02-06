@@ -1,8 +1,10 @@
 mat-form-field.example-full-width{
-    margin-top: 4%;
     margin-left: 4%;
     margin-right: 4%;
     width: 35%;
+ }
+ div.serchD{
+   margin-top: 7%;
  }
 
  .example-card{
@@ -14,3 +16,14 @@ mat-form-field.example-full-width{
  div.container{
    margin-left: 2%;
  }
+ 
+@media only screen and (max-width: 600px) {
+  
+   mat-form-field.example-full-width{
+      margin-bottom: 4%;
+      width: 85%;
+   }
+   div.serchD{
+      margin-top: 18%;
+   }
+}

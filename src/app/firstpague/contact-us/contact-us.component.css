@@ -3,20 +3,20 @@
     flex-direction: column;
 }
 .card-example{
-    width: 70%;
-    margin-top: 3%;
-    position: absolute;
-    right: 5%;
+    position: relative;
+    width: 42%;
+    left: 50%;
+    top: 4rem;
+    height: 72%;
 }
 .example-container {
     height: 37rem;
   }
-.mat-drawer.mat-drawer-side {
-    width: 50%;
-    background-image: url("../../img/children.jpg");
+mat-drawer-container.example-container{
+    background-image: url("../../img/contactUs.png");
     background-size: cover;
+    margin-top: 4%;
 }
-
 
 @media only screen and (max-width: 600px) {
     mat-drawer-content {
@@ -24,9 +24,9 @@
         display: unset;
     }
     .card-example {
-        right: 7%;
-        width: 80%;
-        top: 5%;
+        left: 10px;
+        width: 86%;
+        height: 55%;
     }
 
     .mat-drawer{
