@@ -16,7 +16,7 @@ export class FirstpagueComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClickData( flag : string){
+  onClickData( flag? : string){
     this.sidenav.close();
     if(flag != undefined )
         this.router.navigate(['/'+flag]);
