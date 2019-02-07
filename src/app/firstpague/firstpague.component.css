@@ -14,7 +14,7 @@ mat-sidenav.mat-drawer.mat-sidenav{
 a#linkBtn1{
     cursor: pointer;
     position: relative;
-    left: 80%;
+    left: 74%;
     top: 7%;
 }
 a#linkBtn2{
@@ -35,16 +35,27 @@ mat-toolbar{
     z-index: 10000;
 }
 
+.firstFoot{
+    position: relative;
+    top: 16px;
+}
+
+.secondFoot{
+    position: relative;
+    right: 17%;
+    top: 10px; 
+}
+
 @media only screen and (max-width: 600px) {
     mat-sidenav.mat-drawer.mat-sidenav[_ngcontent-c1] {
         width: 45%;
     }
     a#linkBtn1{
-        left: 38%;
+        left: 11%;
         top: 8%;
     }
     a#linkBtn2{
-        left: 21%;
+        left: 13%;
         top: 8%;
     }
     div.dd{
