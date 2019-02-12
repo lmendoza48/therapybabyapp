@@ -2,6 +2,9 @@
   <mat-card-header>
       <mat-card-title> {{tittle}} </mat-card-title>
   </mat-card-header>
+  <div class="imgURL" *ngIf = "url">
+      <img mat-card-image src="{{url}}" alt="Photo of a Shiba Inu">
+  </div>
     <mat-card-content>
        <p style=" text-align: justify; ">{{inform}}</p>
     </mat-card-content>    

@@ -30,6 +30,7 @@ export class AllInformationComponent implements OnInit {
   onItemClick(data : Datatext){
       sessionStorage.setItem('dato',  data.alltext);
       sessionStorage.setItem('tittle',  data.title);
+      sessionStorage.setItem('url',  data.urlImg);
       this.router.navigate(['/information']);
       //this.allCardInfo.getOneDataFirebase(data.$key);
   }
