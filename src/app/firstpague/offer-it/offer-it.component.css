@@ -1,0 +1,17 @@
+div.imgData{
+    background-image: url('http://gualeguaychu.gov.ar/apps/dashboard/ftp/web/images/landscape_o__Gualeguaychu_1503422818.jpg');
+    background-size: cover;
+    position: relative;
+    right: 4%;
+    width: 90%;
+    height: 45%;
+}
+.mat-grid-list {
+    top: 39.7rem;
+    background-color: #EB6C8E;
+}
+.container-data{
+    position: relative;
+    width: 80%;
+    color: white;
+}

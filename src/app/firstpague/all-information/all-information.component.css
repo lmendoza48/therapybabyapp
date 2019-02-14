@@ -1,20 +1,30 @@
+.contanierAll{
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 9%;
+   bottom: 0%;
+}
 mat-form-field.example-full-width{
     margin-left: 4%;
     margin-right: 4%;
     width: 35%;
- }
- div.serchD{
-   margin-top: 7%;
- }
+}
 
- .example-card{
+div.serchD{
+   margin-top: 4%;
+   margin-bottom: 2%;
+
+}
+
+.example-card{
     width: 18rem;
     margin: 0.5rem;
     float: left;
     height: 10rem;
  }
  div.container{
-   margin-left: 2%;
+   margin-left: 4%;
  }
  
 @media only screen and (max-width: 600px) {
@@ -24,6 +34,6 @@ mat-form-field.example-full-width{
       width: 85%;
    }
    div.serchD{
-      margin-top: 18%;
+      margin-top: 5%;
    }
 }

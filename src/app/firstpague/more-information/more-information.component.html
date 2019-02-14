@@ -5,8 +5,8 @@
   <div class="imgURL" *ngIf = "url">
       <img mat-card-image src="{{url}}" alt="Photo of a Shiba Inu">
   </div>
-    <mat-card-content>
-       <p style=" text-align: justify; ">{{inform}}</p>
+    <mat-card-content *ngFor = "let itemLis of inform ">
+       <p style=" text-align: justify; ">{{itemLis}}</p>
     </mat-card-content>    
   <mat-card-actions align="end">
      <button mat-button routerLink="/allInformation" color="accent">Regresar</button>

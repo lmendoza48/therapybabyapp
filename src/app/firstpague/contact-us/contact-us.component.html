@@ -1,37 +1,32 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>
-  
-  </mat-drawer>
-  <mat-drawer-content>
-      <mat-card class="card-example">
-          <mat-card-title>
-               Comunicate con nostros:
-          </mat-card-title>
-        <form #contacusmail = "ngForm" (ngSubmit) = "onSendEMail(contacusmail)" class="example-form" >
-          
-            <mat-form-field class="example-full-width">
-                <input matInput placeholder="Nombre" value=""  type ="text" name="name"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.name">
-              </mat-form-field>
-    
-            <mat-form-field class="example-full-width">
-              <input matInput placeholder="Asunto" value=""  type ="text" name="title"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.title">
-            </mat-form-field>
-          
-            <mat-form-field class="example-full-width">
-              <input matInput placeholder="Correo" value=""  type ="text" name="mail" #toMailt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.mail">
-            </mat-form-field>
-          
-            <mat-form-field class="example-full-width">
-              <textarea matInput placeholder="Comentarios"  type ="text" name="alltext" #commentt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.alltext" required ></textarea>
-            </mat-form-field>
-          
-          <mat-card-actions align="end">
-              <button mat-button routerLink="/">Regresar</button>
-              <button type="submit" mat-button color="accent" [disabled] = "!contacusmail.valid" >Enviar</button>
-          </mat-card-actions>
-        </form>
-    </mat-card>  
-  </mat-drawer-content>
-</mat-drawer-container>
+<div class="containerImg">
+  <mat-card class="card-example">
+    <mat-card-title>
+                Comunicate con nostros:
+     </mat-card-title>
+         <form #contacusmail = "ngForm" (ngSubmit) = "onSendEMail(contacusmail)" class="example-form" >       
+             <mat-form-field class="example-full-width">
+                 <input matInput placeholder="Nombre" value=""  type ="text" name="name"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.name">
+               </mat-form-field>
+     
+             <mat-form-field class="example-full-width">
+               <input matInput placeholder="Asunto" value=""  type ="text" name="title"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.title">
+             </mat-form-field>
+           
+             <mat-form-field class="example-full-width">
+               <input matInput placeholder="Correo" value=""  type ="text" name="mail" #toMailt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.mail">
+             </mat-form-field>
+           
+             <mat-form-field class="example-full-width">
+               <textarea matInput placeholder="Comentarios"  type ="text" name="alltext" #commentt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.alltext" required ></textarea>
+             </mat-form-field>
+           
+           <mat-card-actions align="end">
+               <button mat-button routerLink="/">Regresar</button>
+               <button type="submit" mat-button color="accent" [disabled] = "!contacusmail.valid" >Enviar</button>
+           </mat-card-actions>
+   </form>
+ </mat-card>  
+</div>
+
 
 

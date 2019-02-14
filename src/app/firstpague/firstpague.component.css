@@ -23,7 +23,7 @@ a#linkBtn2{
     left: 75%;
     top: 7%;
 }
-span h3{
+h3 b{
     font-family: 'Indie Flower', cursive;
 }
 div.dd{
@@ -32,7 +32,8 @@ div.dd{
 
 mat-toolbar{
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
+    top: 0%;
 }
 
 .firstFoot{

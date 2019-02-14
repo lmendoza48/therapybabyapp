@@ -18,6 +18,8 @@ import { MoreInformationComponent } from './firstpague/more-information/more-inf
 import { MessagesDatosService } from './services/messages-datos.service';
 import { AllInformationComponent } from './firstpague/all-information/all-information.component';
 import { environment } from 'src/environments/environment';
+import { WhousComponent } from './firstpague/whous/whous.component';
+import { OfferItComponent } from './firstpague/offer-it/offer-it.component';
 
 const routes : Routes = [
   {
@@ -45,7 +47,9 @@ const routes : Routes = [
     ContactUsComponent,
     HomeComponent,
     MoreInformationComponent,
-    AllInformationComponent
+    AllInformationComponent,
+    WhousComponent,
+    OfferItComponent
   ],
   imports: [
     BrowserModule,

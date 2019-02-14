@@ -8,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoreInformationComponent implements OnInit {
   
-  inform : string = "";
+  inform : string[];
   tittle : string = "";
   url : string = "";
 
   constructor() { }
 
   ngOnInit() {
-    this.inform = sessionStorage.getItem('dato');
+    var datt = sessionStorage.getItem('dato');
+    this.inform = datt.split('\n');
     this.tittle = sessionStorage.getItem('tittle');
     this.url = sessionStorage.getItem('url');
     sessionStorage.clear();

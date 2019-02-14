@@ -5,17 +5,21 @@
 .card-example{
     position: relative;
     width: 42%;
-    left: 50%;
-    top: 4rem;
-    height: 72%;
+    left: 49.5%;
+    top: 6.5rem;
+    height: 64%;
+    background-color: #EB6C8E;
+    border-radius: 1rem;
+    color: white;
 }
-.example-container {
-    height: 37rem;
-  }
-mat-drawer-container.example-container{
-    background-image: url("../../img/contactUs.png");
-    background-size: cover;
-    margin-top: 4%;
+
+.containerImg{
+    background-image: url("../../img/contactUS2.png");
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    top: 5%;
 }
 
 @media only screen and (max-width: 600px) {
