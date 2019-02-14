@@ -21,8 +21,8 @@ import {
         opacity: 0,
         transform: "translateX(-100%)"
       })),
-      transition('show => hide', animate('700ms ease-out')),
-      transition('hide => show', animate('700ms ease-in'))
+      transition('show => hide', animate('900ms ease-out')),
+      transition('hide => show', animate('900ms ease-in'))
     ])
   ]
 })

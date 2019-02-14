@@ -16,7 +16,8 @@ export class MoreInformationComponent implements OnInit {
 
   ngOnInit() {
     var datt = sessionStorage.getItem('dato');
-    this.inform = datt.split('\n');
+    if(datt != null)
+       this.inform = datt.split('\n');
     this.tittle = sessionStorage.getItem('tittle');
     this.url = sessionStorage.getItem('url');
     sessionStorage.clear();

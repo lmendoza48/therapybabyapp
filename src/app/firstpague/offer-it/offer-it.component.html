@@ -1,18 +1,40 @@
-<mat-grid-list cols="2" rowHeight="2:2">
-  <mat-grid-tile class="firstcol">
-    <div class="container-data" [@scrollAnimation]="state" >
-      <h1 style="font-family: 'Playfair Display', serif;">Áreas de Abordaje</h1>
-      <p><b>
-        Estimulacion temprana </b></p>
+<mat-grid-list  class="NoMobile" cols="2" rowHeight="2:2">
+    <mat-grid-tile class="firstcol">
+      <div class="container-data" [@scrollAnimation]="state" >
+        <h1 class="titleText">Áreas de Abordaje</h1>
         <p><b>
-         Grafomotricidad </b></p>
-         <p><b>
-           Terapia Ocupacional con formación en integración sensorial </b></p>
+          Estimulacion temprana </b></p>
+          <p><b>
+           Grafomotricidad </b></p>
            <p><b>
-             Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA) </b></p>
-   </div>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <div class="imgData"></div>
-  </mat-grid-tile>
-</mat-grid-list>
+             Terapia Ocupacional con formación en integración sensorial </b></p>
+             <p><b>
+               Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA) </b></p>
+     </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="imgData"></div>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+<!-- MoBILe -->
+<mat-grid-list class="Mobile" cols="1" rowHeight="2:2">
+    <mat-grid-tile class="colm3">
+      <div class="imgMobile">
+  
+      </div>
+      <h1 class="titleText">Áreas de Abordaje</h1>
+    </mat-grid-tile>
+    <mat-grid-tile class="colm4" [@scrollAnimation]="state" >
+            <div class="firtParr">
+                <p><b>
+                    Estimulacion temprana </b></p>
+                    <p><b>
+                     Grafomotricidad </b></p>
+                     <p><b>
+                       Terapia Ocupacional con formación en integración sensorial </b></p>
+                       <p><b>
+                         Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA) </b></p>
+            </div>
+    </mat-grid-tile>
+  </mat-grid-list>

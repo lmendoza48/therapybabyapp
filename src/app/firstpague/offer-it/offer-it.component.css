@@ -6,7 +6,7 @@ div.imgData{
     width: 90%;
     height: 45%;
 }
-.mat-grid-list {
+mat-grid-list.NoMobile {
     top: 39.7rem;
     background-color: #EB6C8E;
 }
@@ -14,4 +14,53 @@ div.imgData{
     position: relative;
     width: 80%;
     color: white;
+}
+mat-grid-list.Mobile{
+    display: none;
+}
+.titleText{
+    font-family: 'Amatic SC', cursive;
+}
+p b {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+
+    mat-grid-list.NoMobile{
+        display: none;
+    }
+    mat-grid-list.Mobile{
+        display: block;
+    }
+    mat-grid-list mat-grid-tile.colm4{
+        background:#FF4081;
+   }
+   .imgMobile{
+        background-image: url('http://gualeguaychu.gov.ar/apps/dashboard/ftp/web/images/landscape_o__Gualeguaychu_1503422818.jpg');
+        background-size: cover;
+        position: absolute;
+        left: 5%;
+        right: 0%;
+        top: 3%;
+        bottom: 0%;
+        width: 90%;
+        height: 77%;
+    }
+    .titleText{
+        position: relative;
+        top: 9rem;
+        color: black;
+    }
+
+    .firtParr{
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 0%;
+        font-size: medium;
+        left: 2%;
+        color: white;
+        text-align: justify;
+        width: 95%;
+    }
 }
