@@ -1,0 +1,75 @@
+.mat-card{
+    position: fixed;
+    top: 16rem;
+    width: 25%;
+    left: 70%;
+    z-index: 100;
+}
+.mat-form-field{
+    position: relative;
+    width: 90%;
+}
+
+.mssgIcon-button{
+    position: relative;
+    left: 93%;
+    bottom: 50px;
+}
+
+.messageChat{
+    height: 15rem;
+    background: aliceblue;
+    overflow: auto;
+    position: relative;
+    bottom: 1rem;
+}
+
+form{
+    height: 3rem;
+}
+
+.buttonActiveShow{
+    position: fixed;
+    left: 94%;
+    top: 36rem;
+    z-index: 100;
+}
+.exit-icon{
+    position: relative;
+    left: 90%;
+    top: -9px;
+    cursor: pointer;
+}
+
+.botStyle{
+    position: relative;
+    left: 49%;
+    width: 50%;
+    background: #FF4081;
+    border-radius: 5px;
+}
+
+.userStyle{
+    position: relative;
+    left: 1%;
+    width: 50%;
+    background: aqua;
+    border-radius: 10px;
+}
+
+.titleCardStyle{
+    background: #EB6C8E;
+    width: 114%;
+    height: 3rem;
+    position: relative;
+    right: 24px;
+    bottom: 24px;
+}
+.textTitleCardData{
+    font-family: 'Lobster Two', cursive;
+    font-size: 17px;
+    position: relative;
+    top: 11px;
+    left: 4%;
+    color: whitesmoke;
+}

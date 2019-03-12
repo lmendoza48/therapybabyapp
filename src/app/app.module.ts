@@ -20,6 +20,8 @@ import { AllInformationComponent } from './firstpague/all-information/all-inform
 import { environment } from 'src/environments/environment';
 import { WhousComponent } from './firstpague/whous/whous.component';
 import { OfferItComponent } from './firstpague/offer-it/offer-it.component';
+import { ChatBotComponent } from './chat-bot/chat-bot.component';
+import { ChatbotService } from './services/chatbot.service'
 
 const routes : Routes = [
   {
@@ -38,6 +40,11 @@ const routes : Routes = [
     path:'allInformation',
     component: AllInformationComponent
   }
+  ,
+  {
+    path:'pruebaChatBot',
+    component: ChatBotComponent
+  }
 ];
 
 @NgModule({
@@ -49,7 +56,8 @@ const routes : Routes = [
     MoreInformationComponent,
     AllInformationComponent,
     WhousComponent,
-    OfferItComponent
+    OfferItComponent,
+    ChatBotComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +70,7 @@ const routes : Routes = [
     HttpClientModule,
     Ng2SearchPipeModule
   ],
-  providers: [MessagesDatosService],
+  providers: [MessagesDatosService, ChatbotService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

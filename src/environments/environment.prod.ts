@@ -7,5 +7,8 @@ export const environment = {
     projectId: "therapyapp-6edb2",
     storageBucket: "therapyapp-6edb2.appspot.com",
     messagingSenderId: "482425361237"
-  }
+  },
+  dialogFlow: {
+    angularBot:'aae1c4f707034241bad1b630fff542e1'
+ }
 };
