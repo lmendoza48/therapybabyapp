@@ -21,7 +21,8 @@ import { environment } from 'src/environments/environment';
 import { WhousComponent } from './firstpague/whous/whous.component';
 import { OfferItComponent } from './firstpague/offer-it/offer-it.component';
 import { ChatBotComponent } from './chat-bot/chat-bot.component';
-import { ChatbotService } from './services/chatbot.service'
+import { ChatbotService } from './services/chatbot.service';
+import { SliderModule } from 'angular-image-slider';
 
 const routes : Routes = [
   {
@@ -68,7 +69,8 @@ const routes : Routes = [
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    SliderModule
   ],
   providers: [MessagesDatosService, ChatbotService],
   bootstrap: [AppComponent]

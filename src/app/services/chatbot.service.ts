@@ -13,11 +13,19 @@ export class ChatbotService {
   readonly client = new ApiAiClient({accessToken: this.token});
 
   chatMssgList : Chatbot[] = [];
+  flagChat : boolean = false;
 
   constructor() { }
 
   onSaveMessage(mgs : string){
-    this.updateData(mgs, 'user');
+    if(!this.flagChat){
+      this.flagChat = true;
+      this.updateData(mgs, 'user');
+      mgs = 'buenos dias';
+    }else{
+      if(mgs != 'Terapia' && !mgs.includes('Contacto'))
+        this.updateData(mgs, 'user');
+    }
     return this.client.textRequest(mgs)
         .then((res) => 
                 {
@@ -44,6 +52,7 @@ updateData(msg? : string, sentBy? : string){
 
 onCLoseWindow(){
     this.chatMssgList = [];
+    this.flagChat = false;
 
 }
 

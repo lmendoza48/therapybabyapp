@@ -2,12 +2,14 @@
   <mat-card-title class="titleCardStyle">
        <div class="textTitleCardData"> Childrens&Therapy </div> <img class="exit-icon" src="https://img.icons8.com/doodle/24/000000/delete-sign.png" (click) ="onChangedButton('true')">
   </mat-card-title>
-  <div class="messageChat">
-      <div class="dataMssg" *ngFor = "let msg of listChatMssg"   [ngClass] = "{'userStyle' : msg.sentBy == 'user',
+  <div class="messageChat" #scrollMe [scrollTop]="scrollMe.scrollHeight" >
+      <div class="dataMssg" *ngFor = "let msg of listChatMssg; let i = index"   [ngClass] = "{'userStyle' : msg.sentBy == 'user',
                                                                                 'botStyle' : msg.sentBy == 'bot'    }" >
-         <p style="height: auto;
-         margin-left: 5%;
-         padding: 5px;">{{msg.chat}} </p> 
+         <p class="textPackData">{{msg.chat}} </p> 
+         <div class="buttonQuestion" *ngIf="i == 1">
+            <button mat-stroked-button  class="firstButtonChat" color="primary" (click) = "onSendMessage('Terapia')" > Terapia </button>
+            <button mat-stroked-button class="secondButtonChat" color="accent"  (click) = "onSendMessage('Contacto')" > Contacto </button>
+         </div>
       </div>
   </div>
   <form  #chatbot = "ngForm" (ngSubmit) = "onSendMessage()" >
@@ -19,7 +21,6 @@
       </button>    
   </form>  
 </mat-card>
-
 
 <button  class="buttonActiveShow" mat-fab color="accent" [ngStyle]=  "{'display': show ? 'block' : 'none' }"  (click) = "onChangedButton('false')"> <i class="material-icons">
     message

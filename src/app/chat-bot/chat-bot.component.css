@@ -43,8 +43,8 @@ form{
 
 .botStyle{
     position: relative;
-    left: 49%;
-    width: 50%;
+    left: 36%;
+    width: 61%;
     background: #FF4081;
     border-radius: 5px;
 }
@@ -72,4 +72,45 @@ form{
     top: 11px;
     left: 4%;
     color: whitesmoke;
+}
+
+.firstButtonChat{
+    border-radius: 15px;
+    left: 4%;
+    margin: 3px;
+}
+.secondButtonChat{
+    border-radius: 15px;
+    left: 4%;
+    margin: 3px;
+}
+.buttonQuestion{
+    background: aliceblue;
+}
+.textPackData {
+    height: auto;
+    margin-left: 5%;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .buttonActiveShow{
+        left: 82%;
+        top: 31rem;
+    }
+    .mat-card{
+        top: 10rem;
+        width: 68%;
+        left: 22%;
+    }
+    .titleCardStyle{
+        right: 18px; 
+    } 
+
+    .botStyle{
+        left: 20%;
+        width: 77%;
+    }    
+
 }

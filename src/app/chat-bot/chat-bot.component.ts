@@ -20,10 +20,14 @@ export class ChatBotComponent implements OnInit {
    
   }
 
-  onSendMessage(){
-      console.log('datos' + this.chatMy );
+  onSendMessage(buttonMsg? : string){
+     // console.log('datos' + this.chatMy );
       // this.services.talk(); 
-      this.services.onSaveMessage(this.chatMy);
+      if(buttonMsg != undefined){
+        this.services.onSaveMessage(buttonMsg);
+      }else{
+        this.services.onSaveMessage(this.chatMy);
+      }
       this.listChatMssg = this.services.updateData();
       this.chatMy = '';    
   }

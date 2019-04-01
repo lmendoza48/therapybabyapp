@@ -23,6 +23,18 @@ import {
       })),
       transition('show => hide', animate('900ms ease-out')),
       transition('hide => show', animate('900ms ease-in'))
+    ]),
+    trigger('scrollImg', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateY(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateY(-100%)"
+      })),
+      transition('show => hide', animate('900ms ease-out')),
+      transition('hide => show', animate('900ms ease-in'))
     ])
   ]
 })
