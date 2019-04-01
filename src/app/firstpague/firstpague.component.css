@@ -67,7 +67,7 @@ mat-toolbar{
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 370px) {
     a#linkBtn1{
         left: 0%;
         top: 8%;
