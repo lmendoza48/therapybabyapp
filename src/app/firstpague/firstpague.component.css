@@ -11,18 +11,15 @@ mat-sidenav.mat-drawer.mat-sidenav{
 .mat-nav-list{
     padding-top: 25%
 }
-a#linkBtn1{
-    cursor: pointer;
-    position: relative;
-    left: 74%;
-    top: 7%;
+a#linkBtn1, a#linkBtn2{
+   display: none;
 }
-a#linkBtn2{
+/*a#linkBtn2{
     cursor: pointer;
     position: relative;
     left: 75%;
     top: 7%;
-}
+}*/
 h3 b{
     font-family: 'Indie Flower', cursive;
 }
@@ -54,10 +51,12 @@ mat-toolbar{
     a#linkBtn1{
         left: 11%;
         top: 8%;
+        display: block;
     }
     a#linkBtn2{
         left: 13%;
         top: 8%;
+        display: block;
     }
     div.dd{
         margin-top: 20%;

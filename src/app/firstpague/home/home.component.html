@@ -5,17 +5,32 @@
 </div>
 <!-- Mobile -->
 <mat-grid-list cols="1" rowHeight="2:2">
-    <!--<mat-grid-tile class="colm1">1</mat-grid-tile> -->
     <mat-grid-tile class="colm2">  
-      <div class="titleChildren">
+     <!-- <div class="titleChildren">
         <p> Childrens   & Therapy </p>
-      </div>      
+      </div>     --> 
     </mat-grid-tile>
   </mat-grid-list>
-  <app-chat-bot></app-chat-bot>
-  <app-whous></app-whous>
-  <app-offer-it></app-offer-it>
-<!--
+ <!-- / Mobile -->  
+<app-carrusel-img></app-carrusel-img>
+<app-chat-bot></app-chat-bot>
+<app-whous></app-whous>
+<app-offer-it></app-offer-it>
+
+<div class="footer_pague">
+  <div class="contactClass">
+         <button mat-button class="btnContact" routerLink = "/contactus" > <img src="https://img.icons8.com/office/40/000000/email.png"> Contacto!</button> 
+  </div>
+  <div class="maps_layout">
+    <button mat-button class="btnContact"> <img src="https://img.icons8.com/office/40/000000/marker.png"> Argentina, Buenos Aires </button>
+  </div>
+  <div class="redSocial">
+    <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/color/30/000000/instagram-new.png"></a>
+    <a id="linkBtn2" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://es-la.facebook.com/" > <img src="https://img.icons8.com/color/30/000000/facebook.png"></a>
+  </div>
+</div>
+
+<!-- **** other layout for example ************************ /////
   <mat-card class="example-card">
             <mat-card-header>
            <div mat-card-avatar class="example-header-image"></div> 

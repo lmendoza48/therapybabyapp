@@ -6,7 +6,8 @@
     margin-bottom: 3%;
 }
 div.container {
-    background-image: url('../../img/savory.png');
+  /*  background-image: url('../../img/savory.png'); */
+    background: #EB6C8E;
     background-size: cover;
     position: absolute;
     left: 0%;
@@ -15,8 +16,10 @@ div.container {
     bottom: 0%;
 }
 div.titleChildren{
-    position: relative;
-    top: 38%;
+    position: absolute;
+    width: 100%;
+    top: 78%;
+    height: 26%;
     color:white;
 }
 div.titleChildren p {
@@ -24,7 +27,7 @@ div.titleChildren p {
     font-size: 5rem;
     text-align: -webkit-center;
     position: relative;
-    top: 85px;
+    bottom: 33%;
 }
 img.imgTitleChildren{
     position: relative;
@@ -45,15 +48,42 @@ div.footpague p {
     position: relative;
     top: 8px;
 } 
-
-div.container{
-    margin-top: 5%;
-}
 mat-grid-list{
     display: none;
 }
+.footer_pague{
+    background: #EB6C8E;
+    position: relative;
+    top: 39.9rem;
+    width: 100%;
+    height: 50%;
+}
+.btnContact{
+    font-family: 'Lobster Two', cursive;
+    font-size: 29px;
+}
+.contactClass{
+    position: relative;
+    left: 25%;
+    top: 1.5rem;
+    width: 23%;
+}
 
-@media only screen and (max-width: 600px) {
+.maps_layout{
+    position: relative;
+    width: 50%;
+    left: 46%;
+    bottom: 1rem;
+}
+
+.redSocial{
+    position: relative;
+    width: 6%;
+    left: 77%;
+    bottom: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
     div.titleChildren{
         font-size: xx-large;
         top: -25%;
@@ -104,6 +134,25 @@ mat-grid-list{
         text-align: justify;
         width: 95%;
     }
+    .footer_pague{
+        position: relative;
+        width: 100%;
+        height: 10rem;
+        top: 0.2rem;
+        background: #FF4081;
+    }
+    .maps_layout{
+        position: relative;
+        width: 90%;
+        left: 5%;
+        top: 3rem;
+    }
+    .btnContact{
+        font-size: 27px;
+     }
+     .redSocial{
+         display: none;
 
+     }
     
   }

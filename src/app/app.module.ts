@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 import { AppComponent } from './app.component';
 import { FirstpagueComponent } from './firstpague/firstpague.component';
@@ -22,7 +22,7 @@ import { WhousComponent } from './firstpague/whous/whous.component';
 import { OfferItComponent } from './firstpague/offer-it/offer-it.component';
 import { ChatBotComponent } from './chat-bot/chat-bot.component';
 import { ChatbotService } from './services/chatbot.service';
-import { SliderModule } from 'angular-image-slider';
+import { CarruselImgComponent } from './firstpague/carrusel-img/carrusel-img.component';
 
 const routes : Routes = [
   {
@@ -44,7 +44,7 @@ const routes : Routes = [
   ,
   {
     path:'pruebaChatBot',
-    component: ChatBotComponent
+    component: CarruselImgComponent
   }
 ];
 
@@ -58,7 +58,8 @@ const routes : Routes = [
     AllInformationComponent,
     WhousComponent,
     OfferItComponent,
-    ChatBotComponent
+    ChatBotComponent,
+    CarruselImgComponent
   ],
   imports: [
     BrowserModule,
@@ -70,9 +71,9 @@ const routes : Routes = [
     FormsModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    SliderModule
+    SlideshowModule
   ],
-  providers: [MessagesDatosService, ChatbotService],
+   providers: [MessagesDatosService, ChatbotService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
