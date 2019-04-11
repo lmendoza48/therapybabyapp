@@ -1,4 +1,6 @@
 .contanierAll{
+   background-image: url('../../img/savory.png');
+   background-size: cover;
    position: absolute;
    left: 0%;
    right: 0%;
@@ -12,7 +14,7 @@ mat-form-field.example-full-width{
 }
 
 div.serchD{
-   margin-top: 4%;
+   margin-top: 2%;
    margin-bottom: 2%;
 
 }
@@ -22,12 +24,13 @@ div.serchD{
     margin: 0.5rem;
     float: left;
     height: 10rem;
+    border-radius: 1rem;
  }
  div.container{
    margin-left: 4%;
  }
  
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   
    mat-form-field.example-full-width{
       margin-bottom: 4%;

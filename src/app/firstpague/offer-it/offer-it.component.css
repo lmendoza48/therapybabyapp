@@ -2,6 +2,7 @@ div.imgData{
     background-image: url('http://gualeguaychu.gov.ar/apps/dashboard/ftp/web/images/landscape_o__Gualeguaychu_1503422818.jpg');
     background-size: cover;
     position: relative;
+    border-radius: 5rem;
     right: 4%;
     width: 90%;
     height: 45%;
@@ -25,7 +26,7 @@ p b {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     mat-grid-list.NoMobile{
         display: none;
@@ -40,6 +41,7 @@ p b {
         background-image: url('http://gualeguaychu.gov.ar/apps/dashboard/ftp/web/images/landscape_o__Gualeguaychu_1503422818.jpg');
         background-size: cover;
         position: absolute;
+        border-radius: 4rem;
         left: 5%;
         right: 0%;
         top: 3%;

@@ -23,6 +23,7 @@ import { OfferItComponent } from './firstpague/offer-it/offer-it.component';
 import { ChatBotComponent } from './chat-bot/chat-bot.component';
 import { ChatbotService } from './services/chatbot.service';
 import { CarruselImgComponent } from './firstpague/carrusel-img/carrusel-img.component';
+import { PopupAnswerComponent } from './firstpague/contact-us/popup-answer/popup-answer.component';
 
 const routes : Routes = [
   {
@@ -59,7 +60,8 @@ const routes : Routes = [
     WhousComponent,
     OfferItComponent,
     ChatBotComponent,
-    CarruselImgComponent
+    CarruselImgComponent,
+    PopupAnswerComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +75,10 @@ const routes : Routes = [
     Ng2SearchPipeModule,
     SlideshowModule
   ],
-   providers: [MessagesDatosService, ChatbotService],
+  entryComponents:[
+    PopupAnswerComponent
+  ],
+  providers: [MessagesDatosService, ChatbotService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

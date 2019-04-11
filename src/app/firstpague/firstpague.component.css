@@ -44,7 +44,7 @@ mat-toolbar{
     top: 10px; 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     mat-sidenav.mat-drawer.mat-sidenav[_ngcontent-c1] {
         width: 45%;
     }

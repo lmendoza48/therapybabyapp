@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
-import { MessagesDatosService } from 'src/app/services/messages-datos.service';
+import { MatDialog, MatDialogRef } from '@angular/material';
 import { NgForm } from '@angular/forms';
 import { SavemessageService } from 'src/app/services/savemessage.service';
+import { PopupAnswerComponent } from './popup-answer/popup-answer.component';
 
 @Component({
   selector: 'app-contact-us',
@@ -12,19 +12,37 @@ import { SavemessageService } from 'src/app/services/savemessage.service';
 export class ContactUsComponent implements OnInit {
   
   url = 'https://therapyapp-6edb2.firebaseio.com/function';
+  dialogRef : MatDialogRef<PopupAnswerComponent>;
   
-  constructor(public dataServiceMessage : SavemessageService) { }
+  constructor(public dataServiceMessage : SavemessageService, public dialog : MatDialog) { }
 
   ngOnInit() {
     this.dataServiceMessage.getMessage();
   }
 
+  openDialog(): void {
+    this.dialogRef = this.dialog.open(PopupAnswerComponent, {
+      width: '50rem'
+    });
+    this.dialogRef.afterClosed().subscribe(result => {
+     console.log('The dialog was closed' + result );
+     /* if(result != undefined){
+        this.onItemClick(result);
+      }*/
+    });
+  }
+  
   onSendEMail(form : NgForm){
-      this.dataServiceMessage.insertDataMessage(form.value);
-      form.reset();
+    this.dataServiceMessage.insertDataMessage(form.value);
+    form.reset();
   }
 
   /*
+   onSendEMail(form : NgForm){
+      this.dataServiceMessage.insertDataMessage(form.value);
+      form.reset();
+  }
+  
       ***** otros datos email ***** 
        construct (public dataService : MessagesDatosService)
       this.dataService.sendMessage(form.value).subscribe(()=>{
