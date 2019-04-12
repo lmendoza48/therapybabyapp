@@ -29,6 +29,11 @@ div.serchD{
  div.container{
    margin-left: 4%;
  }
+ .mat-card-title {
+   font-size: 15px !important;
+   font-weight: bold;
+   font-family: 'Indie Flower', cursive;
+ }
  
 @media only screen and (max-width: 800px) {
   
@@ -38,5 +43,8 @@ div.serchD{
    }
    div.serchD{
       margin-top: 5%;
+   }
+   .contanierAll{
+      height: max-content;
    }
 }

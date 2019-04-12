@@ -15,9 +15,16 @@
 
 .btnPopupLabel{
     position: relative;
-    left: 62%;
-    top: 17rem;
-    width: 24%;
+    left: 64%;
+    top: 14rem;
+    width: 21%;
+    height: 9rem;
+}
+
+button img{
+    position: relative;
+    right: 10rem;
+    top: 2rem;
 }
 
 .containerImg{
@@ -47,8 +54,15 @@
     }
     .btnPopupLabel{
         position: relative;
-        left: 11%;
-        top: 30rem;
-        width: 24%;  
+        left: 6%;
+        top: 23rem;
+        width: 85%;
+        height: 7rem;
+        margin-bottom: 1rem;
+    }
+    button img{
+        position: relative;
+        right: 10rem;
+        top: 2rem;
     }
   }

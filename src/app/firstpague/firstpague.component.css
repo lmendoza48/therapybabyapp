@@ -20,7 +20,7 @@ a#linkBtn1, a#linkBtn2{
     left: 75%;
     top: 7%;
 }*/
-h3 b{
+span{
     font-family: 'Indie Flower', cursive;
 }
 div.dd{
@@ -43,6 +43,28 @@ mat-toolbar{
     right: 17%;
     top: 10px; 
 }
+.menuMobil{
+    display: none;
+}
+
+.temsBtn{
+    position: relative;
+    left: 3%;
+    height: 4rem;
+}
+.btnHome{
+    position: relative;
+    height: 4rem;
+}    
+
+.mobileTitle{
+    display: none;
+}
+span.layoutDesktop{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+} 
 
 @media only screen and (max-width: 800px) {
     mat-sidenav.mat-drawer.mat-sidenav[_ngcontent-c1] {
@@ -63,6 +85,18 @@ mat-toolbar{
     }
     .mat-nav-list{
         padding-top: 33%
+    }
+    .menuMobil{
+        display: block;
+    }
+    .temsBtn{
+        display: none;
+    }
+    .btnHome{
+        display: none;
+    }
+    .mobileTitle{
+        display: block;
     }
   }
 

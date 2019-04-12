@@ -2,12 +2,19 @@
     position: absolute;
     left: 30%;
     width: 35%;
-    margin-top: 9%;
+    margin-top: 7%;
     margin-bottom: 3%;
+    border-radius: 1rem;
 }
 
 .mat-card-image:first-child {
     margin-top: 0px !important; 
+}
+
+.mat-card-title {
+    font-size: 15px !important;
+    font-weight: bold;
+    font-family: 'Indie Flower', cursive;
 }
 
 @media only screen and (max-width: 800px) {
