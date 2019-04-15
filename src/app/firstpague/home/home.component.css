@@ -61,6 +61,7 @@ mat-grid-list{
 .btnContact{
     font-family: 'Lobster Two', cursive;
     font-size: 29px;
+    color: white;
 }
 .contactClass{
     position: relative;
