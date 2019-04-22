@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialogRef, MatSnackBar } from '@angular/material';
 import { NgForm } from '@angular/forms';
 import { SavemessageService } from 'src/app/services/savemessage.service';
 
@@ -10,15 +10,36 @@ import { SavemessageService } from 'src/app/services/savemessage.service';
 })
 export class PopupAnswerComponent implements OnInit {
 
-  constructor( public dialogRef: MatDialogRef<PopupAnswerComponent>, public dataServiceMessage : SavemessageService) { }
+  constructor( public dialogRef: MatDialogRef<PopupAnswerComponent>, public dataServiceMessage : SavemessageService, private snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.dataServiceMessage.getMessage();
   }
   
   onSendEMail(form : NgForm){
-    this.dataServiceMessage.insertDataMessage(form.value);
-    form.reset();
+    let mailValidation = form.value.mail;
+    if(mailValidation.includes("@")){
+      let sessionMessage = sessionStorage.getItem("messagueCount");
+      if( sessionMessage === null ){
+        this.dataServiceMessage.insertDataMessage(form.value);
+        sessionStorage.setItem("messagueCount","0");
+        form.reset();
+        const message = 'Información enviada...';
+        const action = '¡Gracias!';
+        this.onCloseDialog();
+        this.openSnackBar(message,action);
+      }else{
+        const message = 'No puede enviar mas de un mensaje...';
+        const action = 'ERROR!'
+        this.onCloseDialog();
+        this.openSnackBar(message,action);
+      }
+    }else{
+      const message = 'El campo de Email no tiene el formato correcto';
+      const action = 'ERROR!'
+      this.openSnackBar(message,action);
+    }
+        
   }
 
   resetForm(form? : NgForm)
@@ -36,9 +57,15 @@ export class PopupAnswerComponent implements OnInit {
     }
   }
   
-  onCloseDialog(): void {
-    this.resetForm();
+  onCloseDialog(){
+    this.resetForm();      
     this.dialogRef.close();
+  }
+
+  openSnackBar(message: string, action : string) {
+    this.snackBar.open(message, action, {
+      duration: 3000,
+    });
   }
 
 }

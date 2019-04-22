@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatToolbarModule,
          MatCheckboxModule, 
          MatButtonModule,
@@ -35,7 +36,8 @@ import { MatToolbarModule,
             MatGridListModule,
             MatMenuModule,
             MatCardModule,
-            MatBadgeModule],
+            MatBadgeModule,
+            MatSnackBarModule],
  exports: [MatButtonModule, 
            MatCheckboxModule,
            MatExpansionModule,
@@ -52,7 +54,8 @@ import { MatToolbarModule,
            MatGridListModule,
            MatMenuModule,
            MatCardModule,
-           MatBadgeModule
+           MatBadgeModule,
+           MatSnackBarModule
           ],
 })
 export class MaterialComponent { }

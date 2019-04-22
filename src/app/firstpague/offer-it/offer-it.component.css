@@ -3,7 +3,7 @@ div.imgData{
     background-size: cover;
     position: relative;
     border-radius: 5rem;
-    right: 4%;
+    right: 0%;
     width: 90%;
     height: 45%;
 }
@@ -25,7 +25,9 @@ mat-grid-list.Mobile{
 p b {
     font-family: 'Montserrat', sans-serif;
 }
-
+.colum-two{
+    background: white;
+}
 @media only screen and (max-width: 800px) {
 
     mat-grid-list.NoMobile{

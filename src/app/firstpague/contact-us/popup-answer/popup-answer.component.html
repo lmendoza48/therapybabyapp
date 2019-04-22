@@ -12,7 +12,7 @@
     </mat-form-field>
     
    <mat-form-field class="example-full-width">
-     <input matInput placeholder="Correo" value=""  type ="text" name="mail" #toMailt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.mail">
+     <input matInput placeholder="Correo" value=""  type ="email" name="mail" #toMailt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.mail" required>
    </mat-form-field>
   
    <mat-form-field class="example-full-width">

@@ -13,8 +13,9 @@ div.container-data p {
 div.container-data{
     position: relative;
     width: 42%;
-    left: 51%;
+    left: 55%;
     top: 11rem;
+    color: white;
 }
 mat-grid-list{
     display: none;
