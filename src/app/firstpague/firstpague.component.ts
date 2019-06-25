@@ -9,15 +9,15 @@ import { Router } from '@angular/router';
 })
 export class FirstpagueComponent implements OnInit {
   
-  @ViewChild('sidenav') sidenav: MatSidenav; 
   
   constructor(public router : Router) { }
 
   ngOnInit() {
   }
 
+ /** Old version of the method, not used */
   onClickData( flag? : string){
-    this.sidenav.close();
+   // this.sidenav.close();
     if(flag != undefined )
         this.router.navigate(['/'+flag]);
   }

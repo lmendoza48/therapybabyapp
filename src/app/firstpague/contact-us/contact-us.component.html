@@ -1,5 +1,36 @@
 <div class="containerImg">
-    <button mat-button color="primary"  class="btnPopupLabel" (click) = "openDialog()">Click aqui! Para enviarnos tu comentarios <img src="https://img.icons8.com/bubbles/50/000000/contacts.png"> </button>
+   <!--
+<button mat-button color="primary"  class="btnPopupLabel" (click) = "openDialog()">Click aqui! Para enviarnos tu comentarios <img src="https://img.icons8.com/bubbles/50/000000/contacts.png"> </button>
+   --> 
+
+   <mat-card class="containAllinfo">
+     <div class="titleCctUs">
+         Comunicate con nostros:
+     </div>
+     <form #contacusmail = "ngForm" (ngSubmit) = "onSendEMail(contacusmail)" class="example-form" >       
+      <mat-form-field class="example-full-width">
+          <input matInput placeholder="Nombre" value=""  type ="text" name="name"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.name">
+        </mat-form-field>
+     
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Asunto" value=""  type ="text" name="title"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.title">
+      </mat-form-field>
+     
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Correo" value=""  type ="text" name="mail" #toMailt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.mail">
+      </mat-form-field>
+     
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Comentarios"  type ="text" name="alltext" #commentt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.alltext" required ></textarea>
+      </mat-form-field>
+     
+     <mat-card-actions align="end">
+        <button mat-button routerLink="/">Regresar</button>
+        <button type="submit" mat-button color="accent" [disabled] = "!contacusmail.valid" >Enviar</button>
+     </mat-card-actions>
+     </form>
+   </mat-card>
+
 </div>
 
 

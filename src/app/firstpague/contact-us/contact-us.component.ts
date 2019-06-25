@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
 import { NgForm } from '@angular/forms';
 import { SavemessageService } from 'src/app/services/savemessage.service';
 import { PopupAnswerComponent } from './popup-answer/popup-answer.component';
@@ -14,13 +14,59 @@ export class ContactUsComponent implements OnInit {
   url = 'https://therapyapp-6edb2.firebaseio.com/function';
   dialogRef : MatDialogRef<PopupAnswerComponent>;
   
-  constructor(public dataServiceMessage : SavemessageService, public dialog : MatDialog) { }
+  constructor(public dataServiceMessage : SavemessageService, public dialog : MatDialog, private snackBar : MatSnackBar) { }
 
   ngOnInit() {
     this.dataServiceMessage.getMessage();
   }
 
-  openDialog(): void {
+  onSendEMail(form : NgForm){
+    let mailValidation = form.value.mail;
+    if(mailValidation.includes("@")){
+      let sessionMessage = sessionStorage.getItem("messagueCount");
+      if( sessionMessage === null ){
+        this.dataServiceMessage.insertDataMessage(form.value);
+        sessionStorage.setItem("messagueCount","0");
+        form.reset();
+        const message = 'Información enviada...';
+        const action = '¡Gracias!';
+        this.openSnackBar(message,action);
+      }else{
+        const message = 'No puede enviar mas de un mensaje...';
+        const action = 'ERROR!'
+        this.openSnackBar(message,action);
+      }
+    }else{
+      const message = 'El campo de Email no tiene el formato correcto';
+      const action = 'ERROR!'
+      this.openSnackBar(message,action);
+    }
+        
+  }
+
+  resetForm(form? : NgForm)
+  {
+    if(form != null)
+      form.reset();
+    this.dataServiceMessage.dataMessage = {
+      $key : null,
+      title : '',
+      alltext : '',
+      mail : '',
+      day : Date.now(),
+      name : '',
+      flag : false,
+    }
+  }
+  openSnackBar(message: string, action : string) {
+    this.snackBar.open(message, action, {
+      duration: 3000,
+    });
+  }
+
+  /*
+     version open dialog
+      openDialog(): void {
     this.dialogRef = this.dialog.open(PopupAnswerComponent, {
       width: '50rem'
     });
@@ -28,14 +74,10 @@ export class ContactUsComponent implements OnInit {
      console.log('The dialog was closed' + result );
      /* if(result != undefined){
         this.onItemClick(result);
-      }*/
-    });
-  }
-  
-  onSendEMail(form : NgForm){
-    this.dataServiceMessage.insertDataMessage(form.value);
-    form.reset();
-  }
+       }
+      });
+     }  
+   */
 
   /*
    onSendEMail(form : NgForm){
