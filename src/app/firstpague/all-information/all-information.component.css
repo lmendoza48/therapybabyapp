@@ -39,6 +39,16 @@ div.btnFooter{
    width: 31%;
 }
 
+@media only screen and (max-width: 800px) {
+   div.container{
+      margin-left: 15%;
+   }
+   mat-form-field.example-full-width{
+      margin-left: 10%;
+      width: 50%;
+   }
+}
+
 @media only screen and (max-width: 600px) {
    .contanierAll{
       margin-top: 3.5rem;
@@ -53,19 +63,13 @@ div.btnFooter{
       width: 85% !important;
       margin-left: 2% !important;
    }
-
    .example-card{
       width: 18rem;
    }
 }
 
-@media only screen and (max-width: 800px) {
-   div.container{
-      margin-left: 15%;
+@media only screen and (max-width: 330px) {
+   .example-card{
+      width: 16rem !important;
    }
-   mat-form-field.example-full-width{
-      margin-left: 10%;
-      width: 50%;
-   }
-
 }
