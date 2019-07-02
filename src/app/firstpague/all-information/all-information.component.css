@@ -2,48 +2,66 @@
    background-image: url('../../img/savory.png');
    background-size: cover;
    position: absolute;
-   left: 0%;
-   right: 0%;
-   top: 9%;
-}
-mat-form-field.example-full-width{
-    margin-left: 4%;
-    margin-right: 4%;
-    width: 35%;
+   margin-top: 4rem;
 }
 
 div.serchD{
    margin-top: 2%;
    margin-bottom: 2%;
+   margin-left: 3%;
+}
 
+mat-form-field.example-full-width{
+    width: 35%;
+}
+
+div.container{
+   margin-left: 4%;
 }
 
 .example-card{
-    width: 18rem;
     margin: 0.5rem;
+    width: 21rem;
+    height: 12rem;
     float: left;
-    height: 10rem;
     border-radius: 1rem;
- }
- div.container{
-   margin-left: 4%;
- }
- .mat-card-title {
-   font-size: 15px !important;
-   font-weight: bold;
+}
+
+div.titleCards{
    font-family: 'Indie Flower', cursive;
- }
- 
-@media only screen and (max-width: 800px) {
-  
-   mat-form-field.example-full-width{
-      margin-bottom: 4%;
-      width: 85%;
-   }
-   div.serchD{
-      margin-top: 5%;
-   }
+   margin-bottom: 6%;
+}
+
+div.btnFooter{
+   position: relative;
+   left: 74%;
+   top: 14%;
+   width: 31%;
+}
+
+@media only screen and (max-width: 600px) {
    .contanierAll{
-      height: max-content;
+      margin-top: 3.5rem;
+      background-size: inherit;
    }
+
+   div.container{
+      margin-left: 3% !important;
+   }
+
+   mat-form-field.example-full-width{
+      width: 85% !important;
+      margin-left: 2% !important;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   div.container{
+      margin-left: 15%;
+   }
+   mat-form-field.example-full-width{
+      margin-left: 10%;
+      width: 50%;
+   }
+
 }

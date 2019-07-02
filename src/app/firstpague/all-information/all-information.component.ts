@@ -31,6 +31,13 @@ export class AllInformationComponent implements OnInit {
       sessionStorage.setItem('dato',  data.alltext);
       sessionStorage.setItem('tittle',  data.title);
       sessionStorage.setItem('url',  data.urlImg);
+      sessionStorage.setItem('keyText', data.$key);
+      if(data["like"] != undefined){
+        sessionStorage.setItem('like', data["like"] );
+      }
+      if(data["NotLike"] != undefined){
+        sessionStorage.setItem('NotLike', data["NotLike"] );
+      }
       this.router.navigate(['/information']);
       //this.allCardInfo.getOneDataFirebase(data.$key);
   }

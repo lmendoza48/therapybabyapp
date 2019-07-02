@@ -15,18 +15,32 @@ export class InformationsService {
       return this.information;
   }
 
-  getOneDataFirebase(key : string){
-   /* this.information = this.firebase.list('/cardInformation', ref => ref.equalTo(key));
-    console.log('onfo' + this.information);
-    var ddd = this.information;
-    ddd.snapshotChanges().subscribe(item => {
-      this.cardList = [];
-      item.forEach( element =>{
-        var y = element.payload.toJSON();
-        y["$key"] = element.key;
-        this.cardList.push(y as Datatext);
+  saveLikeNotLike(keyData, likeText, flagLike){
+    
+    if(flagLike){
+      this.information.update(keyData ,{
+        like: likeText
       });
-  });*/
+    }else{
+      this.information.update(keyData ,{
+        NotLike: likeText
+      });
+    }
   }
+
+  /*
+  getOneDataFirebase(key : string){
+      this.information = this.firebase.list('/cardInformation', ref => ref.equalTo(key));
+      console.log('onfo' + this.information);
+      var ddd = this.information;
+      ddd.snapshotChanges().subscribe(item => {
+        this.cardList = [];
+        item.forEach( element =>{
+          var y = element.payload.toJSON();
+          y["$key"] = element.key;
+          this.cardList.push(y as Datatext);
+        });
+    });
+  }*/
   
 }

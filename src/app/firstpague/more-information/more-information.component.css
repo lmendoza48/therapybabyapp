@@ -1,14 +1,18 @@
 .info-card2{
-    position: absolute;
-    left: 30%;
     width: 35%;
-    margin-top: 7%;
-    margin-bottom: 3%;
+    margin-top: 6rem;
+    margin-left: 25rem;
+    margin-bottom: 2rem;
     border-radius: 1rem;
 }
 
-.mat-card-image:first-child {
-    margin-top: 0px !important; 
+.mat-card-header {
+    margin-bottom: 1.7rem; 
+}
+
+.likeOrNotLike{
+    position: relative;
+    bottom: 1rem;
 }
 
 .mat-card-title {
@@ -17,10 +21,26 @@
     font-family: 'Indie Flower', cursive;
 }
 
-@media only screen and (max-width: 800px) {
+.likeBtn{
+    margin-right: 1rem;
+}
+
+.likeBtnIcon{
+    position: relative;
+    margin-left: 4px;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 600px) {
     .info-card2{
-        left: 5%;
-        width: 81%;
-        margin-top: 25%;
+        width: 81% !important;
+        margin-left: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .info-card2 {
+        width: 75%;
+        margin-left: 4rem;
     }
 }

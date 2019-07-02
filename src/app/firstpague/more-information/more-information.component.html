@@ -3,14 +3,32 @@
       <mat-card-title> {{tittle}} </mat-card-title>
   </mat-card-header>
   <div class="imgURL" *ngIf = "url">
-      <img mat-card-image src="{{url}}" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="{{url}}" alt="{{tittle}}">
+     <div class="likeOrNotLike">
+      <button mat-icon-button aria-label="like" (click)="onSendLikeNotLike(true)" class="likeBtn">
+        {{like}}
+        <i class="material-icons likeBtnIcon">
+          thumb_up
+        </i>          
+      </button>
+      <button mat-icon-button aria-label="not like" (click)="onSendLikeNotLike(false)">
+          {{notLike}}
+        <i class="material-icons likeBtnIcon">
+          thumb_down
+          </i>         
+      </button>
+     </div>
   </div>
+  
     <mat-card-content *ngFor = "let itemLis of inform ">
        <p style=" text-align: justify; ">{{itemLis}}</p>
     </mat-card-content>    
   <mat-card-actions align="end">
      <button mat-button routerLink="/allInformation" color="accent">Regresar</button>
-  </mat-card-actions>
+   <!--
+    <button mat-button (click) = "onSendQuestion()" color="accent">Envianos tu dudas...</button>
+   -->  
+    </mat-card-actions>
   
 </mat-card>
 <!--
