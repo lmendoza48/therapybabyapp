@@ -53,6 +53,10 @@ div.btnFooter{
       width: 85% !important;
       margin-left: 2% !important;
    }
+
+   .example-card{
+      width: 18rem;
+   }
 }
 
 @media only screen and (max-width: 800px) {
