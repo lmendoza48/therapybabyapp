@@ -15,12 +15,14 @@ export class ContactUsComponent implements OnInit {
   url = 'https://therapyapp-6edb2.firebaseio.com/function';
   dialogRef : MatDialogRef<PopupAnswerComponent>;
 
-  contactForm = new FormGroup({
-       nameForm : new FormControl(''),
-       asuntForm : new FormControl(''),
-       emailForm : new FormControl(''),
-       comentForm : new FormControl(''),
-  });
+  contactForm = {
+    nameForm : '',
+    asuntForm : '',
+    emailForm : '',
+    comentForm : '',
+  } 
+       
+
 
   constructor(public dataServiceMessage : SavemessageService, public dialog : MatDialog, private snackBar : MatSnackBar) { }
 
