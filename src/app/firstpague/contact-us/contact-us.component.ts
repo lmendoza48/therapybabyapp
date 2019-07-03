@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormControl, FormGroup } from '@angular/forms';
 import { SavemessageService } from 'src/app/services/savemessage.service';
 import { PopupAnswerComponent } from './popup-answer/popup-answer.component';
 
@@ -11,17 +11,26 @@ import { PopupAnswerComponent } from './popup-answer/popup-answer.component';
 })
 export class ContactUsComponent implements OnInit {
   
+  /** Esto es para envio directo de email*/
   url = 'https://therapyapp-6edb2.firebaseio.com/function';
   dialogRef : MatDialogRef<PopupAnswerComponent>;
-  
+
+  contactForm = new FormGroup({
+       nameForm : new FormControl(''),
+       asuntForm : new FormControl(''),
+       emailForm : new FormControl(''),
+       comentForm : new FormControl(''),
+  });
+
   constructor(public dataServiceMessage : SavemessageService, public dialog : MatDialog, private snackBar : MatSnackBar) { }
 
   ngOnInit() {
+    //necessary for initializer object firebase
     this.dataServiceMessage.getMessage();
   }
 
   onSendEMail(form : NgForm){
-    let mailValidation = form.value.mail;
+    let mailValidation = form.value.emailForm;
     if(mailValidation.includes("@")){
       let sessionMessage = sessionStorage.getItem("messagueCount");
       if( sessionMessage === null ){

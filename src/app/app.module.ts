@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
@@ -73,7 +73,8 @@ const routes : Routes = [
     FormsModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    SlideshowModule
+    SlideshowModule,
+    ReactiveFormsModule
   ],
   entryComponents:[
     PopupAnswerComponent

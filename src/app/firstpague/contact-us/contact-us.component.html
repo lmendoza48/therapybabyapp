@@ -7,26 +7,34 @@
      <div class="titleCctUs">
          Comunicate con nostros:
      </div>
-     <form #contacusmail = "ngForm" (ngSubmit) = "onSendEMail(contacusmail)" class="example-form" >       
-      <mat-form-field class="example-full-width">
-          <input matInput placeholder="Nombre" value=""  type ="text" name="name"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.name">
+     <form #contacUsEmail = "ngForm" (ngSubmit) = "onSendEMail(contacUsEmail)" class="example-form" >       
+        <mat-form-field class="example-full-width">
+           <input matInput placeholder="Nombre" type ="text" name="nameForm" #nameCc="ngModel" [(ngModel)] = "contactForm.nameForm" pattern="[A-Za-z0-9\s]{3,10}">
         </mat-form-field>
-     
+        <div *ngIf="nameCc.errors?.pattern"> 
+            <small>Coloque un nombre valido!!!</small> 
+        </div> 
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Asunto" value=""  type ="text" name="title"  #namet ="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.title">
+        <input matInput placeholder="Asunto"  type ="text" name="asuntForm"  #asuntCc ="ngModel" [(ngModel)] = "contactForm.asuntForm" pattern="[A-Za-z0-9\s]{3,30}">
       </mat-form-field>
-     
+      <div *ngIf="asuntCc.errors?.pattern"> 
+          <small>Coloque un asunto valido!!!</small> 
+      </div>      
       <mat-form-field class="example-full-width">
-        <input matInput placeholder="Correo" value=""  type ="text" name="mail" #toMailt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.mail">
+        <input matInput placeholder="Correo" type ="email" name="emailForm" #emailCc="ngModel" [(ngModel)] = "contactForm.emailForm" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
       </mat-form-field>
-     
+      <div *ngIf="emailCc.errors?.pattern"> 
+          <small>Coloque un email valido!!!</small> 
+      </div> 
       <mat-form-field class="example-full-width">
-        <textarea matInput placeholder="Comentarios"  type ="text" name="alltext" #commentt="ngModel" [(ngModel)] = "dataServiceMessage.dataMessage.alltext" required ></textarea>
+        <textarea matInput placeholder="Comentarios" type ="text" name="comentForm" #commentCc="ngModel" [(ngModel)] = "contactForm.comentForm" pattern="[A-Za-z0-9\s]{3,}" required></textarea>
       </mat-form-field>
-     
+      <div *ngIf="commentCc.errors?.pattern"> 
+          <small>Ingreso un comentario valido!!!</small> 
+      </div> 
      <mat-card-actions align="end">
         <button mat-button routerLink="/">Regresar</button>
-        <button type="submit" mat-button color="accent" [disabled] = "!contacusmail.valid" >Enviar</button>
+        <button type="submit" mat-button color="accent" [disabled] = "!contacUsEmail.valid" >Enviar</button>
      </mat-card-actions>
      </form>
    </mat-card>
