@@ -1,26 +1,25 @@
 <div class="secondContainer" >
   <div class="container-data" [@scrollAnimation]="state" >
-     <h1 class ="whoUs">¿Quienes somos?</h1>
-      <p><b>
+     <h1 class ="titleWhoUs">¿Quienes somos?</h1>
+         <p>
           Representamos una organización encargada de la promoción y prevención de patologías 
           desde el marco de la Terapia Ocupacional en el área infantil; a su vez te ofrecemos 
           información y orientación acerca de las etapas del desarrollo psicomotor de tu bebe, 
           como estimularlo de forma adecuada y sencilla, como apoyarlo en el proceso de control 
-          de esfínteres, sus primeras palabras y los procesos de adaptación escolar. </b></p>
+          de esfínteres, sus primeras palabras y los procesos de adaptación escolar. </p>
       
-         <p><b>     
+         <p>   
          Nos interesan tus dudas acerca del desempeño ocupacional de tu bebe e hijo, 
          por tanto te brindamos información de calidad y utilidad, a fin de facilitar el manejo 
          de los chicos en el hogar y los diferentes contextos en donde se desempeñan (escuela, comunidad).      
-        </b></p>
+         </p>
   </div>
 </div>
 
 <!-- MObile -->
-
 <mat-grid-list cols="1" rowHeight="2:2">
   <mat-grid-tile class="colm3">
-    <div class="titleChildrenLayout">
+    <div class="titleChildrenLayoutMobile">
       <p style="
       position: relative;
       bottom: 2rem;
@@ -28,18 +27,16 @@
     </div> 
     <div class="imgMobile">
     </div>
-    <h1 class ="whoUs">¿Quienes somos?</h1>
+    <h1 class ="whoUsMobile">¿Quienes somos?</h1>
   </mat-grid-tile>
-  <mat-grid-tile class="colm4" [@scrollAnimation]="state" >
-          <div class="firtParr">
+  <mat-grid-tile class="colm4">
+          <div class="allTextMobile" [@scrollAnimationMobile]="state">
               <p><b>
                   Representamos una organización encargada de la promoción y prevención de patologías 
                   desde el marco de la Terapia Ocupacional en el área infantil; a su vez te ofrecemos 
                   información y orientación acerca de las etapas del desarrollo psicomotor de tu bebe, 
                   como estimularlo de forma adecuada y sencilla, como apoyarlo en el proceso de control 
                   de esfínteres, sus primeras palabras y los procesos de adaptación escolar. </b></p>
-          </div>
-          <div class="secondParrf">
               <p><b>
                   Nos interesan tus dudas acerca del desempeño ocupacional de tu bebe e hijo, 
                   por tanto te brindamos información de calidad y utilidad, a fin de facilitar el manejo 

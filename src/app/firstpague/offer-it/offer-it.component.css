@@ -1,3 +1,25 @@
+mat-grid-list.NoMobile {
+    top: 39.7rem;
+    background-color: #EB6C8E;
+}
+
+.container-data{
+    position: relative;
+    bottom: 5rem;
+    width: 90%;
+    color: white;
+    margin-left: 1rem;
+}
+
+.titleText{
+    font-family: 'Montserrat', sans-serif;
+}
+
+mat-list mat-list-item{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
 div.imgData{
     background-image: url('http://gualeguaychu.gov.ar/apps/dashboard/ftp/web/images/landscape_o__Gualeguaychu_1503422818.jpg');
     background-size: cover;
@@ -7,39 +29,39 @@ div.imgData{
     width: 90%;
     height: 45%;
 }
-mat-grid-list.NoMobile {
-    top: 39.7rem;
-    background-color: #EB6C8E;
-}
-.container-data{
-    position: relative;
-    width: 80%;
-    color: white;
-}
-mat-grid-list.Mobile{
-    display: none;
-}
-.titleText{
-    font-family: 'Amatic SC', cursive;
-}
-p b {
-    font-family: 'Montserrat', sans-serif;
-}
+
 .colum-two{
     background: white;
 }
+
+mat-grid-list.Mobile{
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
 
+    mat-grid-list.NoMobile{
+        top: 38.5rem;
+        background-color: #EB6C8E;
+        height: 16rem;
+    }
+    mat-grid-tile.firstcol, .colum-two{
+        height: 16rem;
+    }
+    .tabletDesign{
+        padding-top:2rem; 
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
     mat-grid-list.NoMobile{
         display: none;
     }
     mat-grid-list.Mobile{
         display: block;
     }
-    mat-grid-list mat-grid-tile.colm4{
-        background:#FF4081;
-   }
-   .imgMobile{
+    .imgMobile{
         background-image: url('http://gualeguaychu.gov.ar/apps/dashboard/ftp/web/images/landscape_o__Gualeguaychu_1503422818.jpg');
         background-size: cover;
         position: absolute;
@@ -50,21 +72,22 @@ p b {
         bottom: 0%;
         width: 90%;
         height: 77%;
+     }
+     mat-grid-list mat-grid-tile.colm4{
+        background:#FF4081;
     }
-    .titleText{
+    .titleTextMObile{
+        font-family: 'Amatic SC', cursive;
         position: relative;
         top: 9rem;
         color: black;
     }
-
-    .firtParr{
+    .parrfMobileText{
         font-family: 'Montserrat', sans-serif;
-        position: absolute;
-        top: 0%;
         font-size: medium;
-        left: 2%;
         color: white;
         text-align: justify;
         width: 95%;
+        margin-bottom: 9rem;
     }
 }

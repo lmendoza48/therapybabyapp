@@ -2,14 +2,12 @@
     <mat-grid-tile class="firstcol">
       <div class="container-data" [@scrollAnimation]="state" >
         <h1 class="titleText">Ofrecemos servicos de:</h1>
-        <p><b>
-          Estimulacion temprana </b></p>
-          <p><b>
-           Grafomotricidad </b></p>
-           <p><b>
-             Terapia Ocupacional con formación en integración sensorial </b></p>
-             <p><b>
-               Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA) </b></p>
+        <mat-list>
+          <mat-list-item> Estimulacion temprana. </mat-list-item>
+          <mat-list-item> Grafomotricidad. </mat-list-item>
+          <mat-list-item class="tabletDesign"> Terapia Ocupacional con formación en integración sensorial.  </mat-list-item>
+          <mat-list-item class="tabletDesign"> Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA). </mat-list-item>
+        </mat-list>
      </div>
     </mat-grid-tile>
     <mat-grid-tile class="colum-two">
@@ -23,18 +21,16 @@
       <div class="imgMobile">
   
       </div>
-      <h1 class="titleText">Áreas de Abordaje</h1>
+      <h1 class="titleTextMObile">Áreas de Abordaje</h1>
     </mat-grid-tile>
-    <mat-grid-tile class="colm4" [@scrollAnimation]="state" >
-            <div class="firtParr">
-                <p><b>
-                    Estimulacion temprana </b></p>
-                    <p><b>
-                     Grafomotricidad </b></p>
-                     <p><b>
-                       Terapia Ocupacional con formación en integración sensorial </b></p>
-                       <p><b>
-                         Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA) </b></p>
+    <mat-grid-tile class="colm4" >
+            <div class="parrfMobileText" [@scrollAnimation]="state">
+              <mat-list>
+                <mat-list-item> Estimulacion temprana. </mat-list-item>
+                <mat-list-item> Grafomotricidad. </mat-list-item>
+                <mat-list-item> Terapia Ocupacional con formación en integración sensorial.  </mat-list-item>
+                <mat-list-item> Terapia Ocupacional en chicos transtornos del neurodesarrollo (TEA). </mat-list-item>
+              </mat-list>
             </div>
     </mat-grid-tile>
   </mat-grid-list>

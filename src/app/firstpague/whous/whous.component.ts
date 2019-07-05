@@ -16,14 +16,26 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
     trigger('scrollAnimation', [
       state('show', style({
         opacity: 1,
-        transform: "translateY(0)"
+        transform: "translateX(0)"
       })),
       state('hide',   style({
         opacity: 0,
-        transform: "translateY(100%)"
+        transform: "translateX(-100%)"
       })),
-      transition('show => hide', animate('900ms ease-out')),
-      transition('hide => show', animate('900ms ease-in'))
+      transition('show => hide', animate('1100ms ease-out')),
+      transition('hide => show', animate('1100ms ease-in'))
+    ]),
+    trigger('scrollAnimationMobile', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateX(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateX(100%)"
+      })),
+      transition('show => hide', animate('1100ms ease-out')),
+      transition('hide => show', animate('1100ms ease-in'))
     ])
   ]
 })

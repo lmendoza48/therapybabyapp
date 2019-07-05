@@ -21,8 +21,8 @@ import {
         opacity: 0,
         transform: "translateX(-100%)"
       })),
-      transition('show => hide', animate('900ms ease-out')),
-      transition('hide => show', animate('900ms ease-in'))
+      transition('show => hide', animate('1100ms ease-out')),
+      transition('hide => show', animate('1100ms ease-in'))
     ]),
     trigger('scrollImg', [
       state('show', style({
@@ -33,8 +33,8 @@ import {
         opacity: 0,
         transform: "translateY(-100%)"
       })),
-      transition('show => hide', animate('900ms ease-out')),
-      transition('hide => show', animate('900ms ease-in'))
+      transition('show => hide', animate('1100ms ease-out')),
+      transition('hide => show', animate('1100ms ease-in'))
     ])
   ]
 })
