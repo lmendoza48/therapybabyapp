@@ -51,14 +51,13 @@ ul.listWhoisText li p{
         border-radius: 10rem;
     }
     .gridTwoMobile{
-        height: 24rem;
+        height: 18rem;
     }
     .gridContentMobileText{
         font-family: 'Montserrat', sans-serif;
         list-style: none;
         color: #FF4081;
         text-align: justify;
-        margin-top: 1rem;
     }
 }
 

@@ -65,7 +65,7 @@ ul.menuSocial li a#linkBtn1{
     .header-mobile{
         display: block;
         border-bottom: solid 5px #f56a6a;
-        width: 85%;
+        width: 98%;
         position: fixed;
         top: 0;
         z-index: 1000;
