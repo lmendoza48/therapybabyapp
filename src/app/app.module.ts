@@ -18,12 +18,13 @@ import { MoreInformationComponent } from './firstpague/more-information/more-inf
 import { MessagesDatosService } from './services/messages-datos.service';
 import { AllInformationComponent } from './firstpague/all-information/all-information.component';
 import { environment } from 'src/environments/environment';
-import { WhousComponent } from './firstpague/whous/whous.component';
-import { OfferItComponent } from './firstpague/offer-it/offer-it.component';
 import { ChatBotComponent } from './chat-bot/chat-bot.component';
 import { ChatbotService } from './services/chatbot.service';
 import { CarruselImgComponent } from './firstpague/carrusel-img/carrusel-img.component';
-import { PopupAnswerComponent } from './firstpague/contact-us/popup-answer/popup-answer.component';
+import { GaleryIMGComponent } from './firstpague/galery-img/galery-img.component';
+import { PopupIMGComponent } from './firstpague/galery-img/popup-img/popup-img.component';
+import { SecondSectionComponent } from './firstpague/second-section/second-section.component';
+import { ThirdSectionComponent } from './firstpague/third-section/third-section.component';
 
 const routes : Routes = [
   {
@@ -44,8 +45,8 @@ const routes : Routes = [
   }
   ,
   {
-    path:'pruebaChatBot',
-    component: CarruselImgComponent
+    path:'galery',
+    component: GaleryIMGComponent
   }
 ];
 
@@ -57,11 +58,12 @@ const routes : Routes = [
     HomeComponent,
     MoreInformationComponent,
     AllInformationComponent,
-    WhousComponent,
-    OfferItComponent,
     ChatBotComponent,
     CarruselImgComponent,
-    PopupAnswerComponent
+    GaleryIMGComponent,
+    PopupIMGComponent,
+    SecondSectionComponent,
+    ThirdSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +79,7 @@ const routes : Routes = [
     ReactiveFormsModule
   ],
   entryComponents:[
-    PopupAnswerComponent
+    PopupIMGComponent
   ],
   providers: [MessagesDatosService, ChatbotService],
   bootstrap: [AppComponent]

@@ -1,0 +1,63 @@
+.secondgridNotMobile{
+    position: relative;
+    top: 6.5rem
+}
+img.img-second-section{
+    width: 92%;
+    border-radius: 1rem;
+}
+
+ul.listWhoisText{
+    list-style: none;
+}
+ul.listWhoisText li {
+    margin:1rem;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    line-height: 1.6;
+    color: #FF4081;
+}
+ul.listWhoisText li p{
+    margin-right: 1rem;
+}
+.secondgridMobile{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .secondgridNotMobile{
+        display: none;
+    }
+    .secondgridMobile{
+        display: block;
+        top: 4rem;
+        margin-left: 1rem
+    }
+    .gridTitleMobile{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        list-style: none;
+        right: 4%; 
+        color: #FF4081;  
+    }
+    .imgLogo{
+        background-image: url("../../img/logoTerapia.jpg");
+        position: absolute;
+        left: 19%;
+        right: 0%;
+        width: 65%;
+        height: 269%;
+        border-radius: 10rem;
+    }
+    .gridTwoMobile{
+        height: 18rem;
+    }
+    .gridContentMobileText{
+        font-family: 'Montserrat', sans-serif;
+        list-style: none;
+        color: #FF4081;
+        text-align: justify;
+
+    }
+}
+

@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import {
   trigger,
   state,
@@ -8,9 +8,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-offer-it',
-  templateUrl: './offer-it.component.html',
-  styleUrls: ['./offer-it.component.css'],
+  selector: 'app-second-section',
+  templateUrl: './second-section.component.html',
+  styleUrls: ['./second-section.component.css'],
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
@@ -24,22 +24,22 @@ import {
       transition('show => hide', animate('1100ms ease-out')),
       transition('hide => show', animate('1100ms ease-in'))
     ]),
-    trigger('scrollImg', [
+    trigger('scrollAnimationIMG', [
       state('show', style({
         opacity: 1,
-        transform: "translateY(0)"
+        transform: "translateX(0)"
       })),
       state('hide',   style({
         opacity: 0,
-        transform: "translateY(-100%)"
+        transform: "translateX(100%)"
       })),
       transition('show => hide', animate('1100ms ease-out')),
       transition('hide => show', animate('1100ms ease-in'))
     ])
   ]
 })
-export class OfferItComponent implements OnInit {
-
+export class SecondSectionComponent implements OnInit {
+   
   state = 'hide'
 
   constructor(public el: ElementRef) { }
@@ -59,6 +59,5 @@ export class OfferItComponent implements OnInit {
     }
 
   }
-
 
 }

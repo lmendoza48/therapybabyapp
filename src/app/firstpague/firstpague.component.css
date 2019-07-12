@@ -1,112 +1,101 @@
-.sidenav-container{
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+.container-home{
+    height: 41rem;
+    width: 100%;
 }
-mat-sidenav.mat-drawer.mat-sidenav{
-    width: 20%;
-}
-.mat-nav-list{
-    padding-top: 25%
-}
-a#linkBtn1, a#linkBtn2{
-   display: none;
-}
-/*a#linkBtn2{
-    cursor: pointer;
-    position: relative;
-    left: 75%;
-    top: 7%;
-}*/
-span{
-    font-family: 'Indie Flower', cursive;
-}
-div.dd{
-    margin-top: 8%;
-}
-
-mat-toolbar{
+.header-section{
+    border-bottom: solid 5px #f56a6a;
+    margin-left: 1rem;
+    margin-right: 1rem;
     position: fixed;
     z-index: 100;
-    top: 0%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: white;
+}
+ul.menu li{
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+ul.menu li button.titleHeader{
+    font-family: 'Lobster Two', cursive !important;
+    font-size: 28px !important;
+    height: 5rem !important;
+    color: #EB6C8E;
 }
 
-.firstFoot{
+ul.menu li button.temsBtn,.btnGalery{
+    height: 5rem;
+}
+
+ul.menu li .iconbabyfoot{
     position: relative;
-    top: 16px;
+    top: 1.5rem;
+    right: 2rem;
 }
 
-.secondFoot{
+ul.menu li button.btntitleMenu{
+    height: 3rem;
+}
+
+ul.menuSocial li{
+    display: inline-block;
     position: relative;
-    right: 17%;
-    top: 10px; 
-}
-.menuMobil{
-    display: none;
+    left: 16rem;
+    top: 1rem;
 }
 
-.temsBtn{
-    position: relative;
-    left: 3%;
-    height: 4rem;
+ul.menuSocial li a#linkBtn1{
+    margin-right: 0.5rem
 }
-.btnHome{
-    position: relative;
-    height: 4rem;
-}    
 
-.mobileTitle{
-    display: none;
+.header-mobile{
+   display: none;
 }
-span.layoutDesktop{
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.3rem;
-    margin-left: 0.5rem;
-} 
 
-@media only screen and (max-width: 800px) {
-    mat-sidenav.mat-drawer.mat-sidenav[_ngcontent-c1] {
-        width: 45%;
+@media only screen and (max-width: 600px) {
+    .header-section{
+        display: none;
     }
-    a#linkBtn1{
-        left: 11%;
-        top: 8%;
+    .section_mobile{
+        height: 5rem;
+        width: 50%;
+        margin-left: 1rem;
+    }
+    .header-mobile{
         display: block;
+        border-bottom: solid 5px #f56a6a;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        background: white;
     }
-    a#linkBtn2{
-        left: 13%;
-        top: 8%;
-        display: block;
+    .btntitleMenu{
+        position: fixed;
+        left: 5%;
+        top: 5%;
     }
-    div.dd{
-        margin-top: 20%;
+    h2.titleHeader{
+        position: relative;
+        bottom: 2rem;
+        left: 22%;
+        width: 70%;
     }
-    .mat-nav-list{
-        padding-top: 33%
+    .iconbabyfoot{
+        position: absolute;
+        left: 80%;
+        bottom: 85%;
     }
     .menuMobil{
-        display: block;
+        position: relative;
+        top: 1.5rem;
     }
-    .temsBtn{
-        display: none;
-    }
-    .btnHome{
-        display: none;
-    }
-    .mobileTitle{
-        display: block;
-    }
-  }
-
-  @media only screen and (max-width: 370px) {
-    a#linkBtn1{
-        left: 0%;
-        top: 8%;
-    }
-    a#linkBtn2{
-        left: 3%;
-        top: 8%;
-    }
-  }
+    .menuSocialMobil{
+        list-style: none;
+        display: inline-flex;
+        position: absolute;
+        left: 65%;
+        bottom: 0%;
+    }   
+}

@@ -1,80 +1,70 @@
-<mat-toolbar color="accent">
-     <button mat-icon-button [matMenuTriggerFor]="menu" class="menuMobil">
-       <i class="material-icons"> list</i>
-     </button>
-  <button mat-button  routerLink = "/" class="btnHome"> <img src="https://img.icons8.com/material-outlined/30/000000/home-page.png"> <span class="layoutDesktop">Childrens&Therapy</span> </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink = "/">
-          <mat-icon>home</mat-icon>
-          <span>Inicio</span>
-    </button>    
-    <button mat-menu-item routerLink = "/allInformation">
-      <mat-icon>description</mat-icon>
-      <span>Temas</span>
-    </button>
-   <!-- <button mat-menu-item routerLink = "/contactus">
-      <mat-icon>perm_contact_calendar</mat-icon>
-      <span>Contacto</span>
-    </button> -->
-  </mat-menu> 
-  <span class="mobileTitle">Childrens&Therapy</span>
-  <div class="footTag">
-    <svg class="firstFoot" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="24" height="24"
-    viewBox="0 0 224 224"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="#ff4081"></path><g fill="#ffffff"><path d="M138.13333,22.4c-6.18559,0 -11.2,6.68588 -11.2,14.93333c0,8.24745 5.01441,14.93333 11.2,14.93333c6.18559,0 11.2,-6.68588 11.2,-14.93333c0,-8.24745 -5.01441,-14.93333 -11.2,-14.93333zM113.91041,27.46042c-1.98124,0 -3.88125,1.04963 -5.28168,2.91778c-1.40043,1.86815 -2.18645,4.40164 -2.18499,7.04263c0.003,5.4941 3.34506,9.94583 7.46667,9.94583c4.12161,0 7.46367,-4.45173 7.46667,-9.94583c0.00146,-2.64099 -0.78456,-5.17448 -2.18499,-7.04263c-1.40043,-1.86815 -3.30044,-2.91778 -5.28168,-2.91778zM96.5125,35.21875c-3.55826,-0.00155 -6.44395,3.84386 -6.44583,8.58958c0.00188,4.74572 2.88757,8.59113 6.44583,8.58958c3.55257,-0.00918 6.42937,-3.85145 6.43125,-8.58958c-0.00187,-4.73814 -2.87868,-8.5804 -6.43125,-8.58958zM84.7,49.13125c-2.51936,-0.0018 -4.56289,2.72073 -4.56458,6.08125c-0.00209,1.61632 0.47797,3.16734 1.3343,4.31093c0.85632,1.14359 2.01854,1.78578 3.23029,1.78491c2.51793,-0.00893 4.55435,-2.73721 4.55,-6.09583c-0.00168,-3.35293 -2.03634,-6.07233 -4.55,-6.08125zM120.07916,59.73333c-20.6304,0 -45.39792,17.8304 -45.39792,44.8c0,22.4 14.91875,34.272 14.91875,63.46667c0,14.43304 11.70029,26.13333 26.13333,26.13333c14.43304,0 26.13333,-11.70029 26.13333,-26.13333c-0.00766,-1.80911 -0.20315,-3.61253 -0.58333,-5.38125c-0.07333,-0.36363 -0.16156,-0.72163 -0.24792,-1.07916c-0.25527,-1.01954 -0.57182,-2.02275 -0.94792,-3.00417c-3.90299,-11.1905 -13.15417,-19.78543 -13.15417,-31.60208c0,-16.27733 22.4,-15.77707 22.4,-37.33333c0,-16.94187 -12.16297,-29.86667 -29.25417,-29.86667zM78.4,64.70625c-2.05971,0 -3.73029,2.22526 -3.73333,4.97292c-0.00144,1.3221 0.39126,2.59071 1.09155,3.52626c0.70029,0.93555 1.6507,1.46124 2.64178,1.46124c0.99108,0 1.94149,-0.5257 2.64178,-1.46124c0.70029,-0.93555 1.09299,-2.20416 1.09155,-3.52626c-0.00304,-2.74765 -1.67362,-4.97292 -3.73333,-4.97292z"></path></g></g></svg>
-    <svg  class="secondFoot" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="24" height="24"
-    viewBox="0 0 224 224"
-    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="#ff4081"></path><g fill="#ffffff"><path d="M85.86667,22.4c-6.18559,0 -11.2,6.68588 -11.2,14.93333c0,8.24745 5.01441,14.93333 11.2,14.93333c6.18559,0 11.2,-6.68588 11.2,-14.93333c0,-8.24745 -5.01441,-14.93333 -11.2,-14.93333zM110.08959,27.46042c-1.98124,0 -3.88125,1.04963 -5.28168,2.91778c-1.40043,1.86815 -2.18645,4.40164 -2.18499,7.04263c0.003,5.4941 3.34506,9.94583 7.46667,9.94583c4.12161,0 7.46367,-4.45173 7.46667,-9.94583c0.00146,-2.64099 -0.78456,-5.17448 -2.18499,-7.04263c-1.40043,-1.86815 -3.30044,-2.91778 -5.28168,-2.91778zM127.4875,35.21875c-3.55257,0.00918 -6.42937,3.85145 -6.43125,8.58958c0.00187,4.73814 2.87868,8.5804 6.43125,8.58958c3.55826,0.00155 6.44395,-3.84386 6.44583,-8.58958c-0.00188,-4.74572 -2.88757,-8.59113 -6.44583,-8.58958zM139.3,49.13125c-2.51366,0.00892 -4.54832,2.72832 -4.55,6.08125c-0.00435,3.35862 2.03207,6.08691 4.55,6.09583c1.21174,0.00087 2.37396,-0.64132 3.23029,-1.78491c0.85632,-1.14359 1.33639,-2.69461 1.3343,-4.31093c-0.00169,-3.36052 -2.04522,-6.08305 -4.56458,-6.08125zM103.92084,59.73333c-17.0912,0 -29.25417,12.9248 -29.25417,29.86667c0,21.55627 22.4,21.056 22.4,37.33333c0,11.97844 -9.49759,20.65044 -13.3,32.06875c-0.27269,0.74706 -0.51113,1.50619 -0.71458,2.275c-0.103,0.40965 -0.23488,0.80739 -0.32084,1.225c-0.3932,1.80633 -0.59363,3.64929 -0.59792,5.49792c0,14.43304 11.70029,26.13333 26.13333,26.13333c14.43304,0 26.13333,-11.70029 26.13333,-26.13333c0,-29.19467 14.91875,-41.06667 14.91875,-63.46667c0,-26.9696 -24.76752,-44.8 -45.39792,-44.8zM145.6,64.70625c-2.05971,0 -3.73029,2.22526 -3.73333,4.97292c-0.00144,1.3221 0.39126,2.59071 1.09155,3.52626c0.70029,0.93555 1.6507,1.46124 2.64178,1.46124c0.99108,0 1.94149,-0.5257 2.64178,-1.46124c0.70029,-0.93555 1.09299,-2.20416 1.09155,-3.52626c-0.00304,-2.74765 -1.67362,-4.97292 -3.73333,-4.97292z"></path></g></g></svg>
- </div>  
- <button mat-button routerLink = "/allInformation" class="temsBtn"> <img src="https://img.icons8.com/bubbles/50/000000/book.png"> <span> Temas </span> </button>
- <!-- <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/color/30/000000/instagram-new.png"></a>
-      <a id="linkBtn2" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://es-la.facebook.com/" > <img src="https://img.icons8.com/color/30/000000/facebook.png"></a>
--->
- </mat-toolbar>
-<router-outlet></router-outlet>
-     
+<!--header-->
+<section class="header-section">
+    <mat-grid-list cols="2" rowHeight="8:1">
+        <mat-grid-tile>
+            <ul class="menu">
+                <li>
+                    <button  class="animated bounce titleHeader" mat-button routerLink="/"> Childrens & Therapy</button>
+                </li>
+                 <li>
+                      <svg  class="iconbabyfoot" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                      width="50" height="30"
+                      viewBox="0 0 172 172"
+                      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#eb6c8e"><g id="surface1"><path d="M69.9825,0c-4.36719,0 -8.76125,3.3325 -10.6425,8.4925c-2.31125,6.35594 0.05375,13.08813 5.2675,15.05c0.98094,0.36281 2.00219,0.5375 3.01,0.5375c4.36719,0 8.76125,-3.3325 10.6425,-8.4925c2.32469,-6.35594 -0.05375,-13.08812 -5.2675,-15.05c-0.9675,-0.36281 -2.00219,-0.5375 -3.01,-0.5375zM48.6975,0.1075c-3.35937,0 -6.24844,3.49375 -6.665,7.955c-0.43,4.66281 2.0425,8.7075 5.59,9.03c0.16125,0.01344 0.28219,0 0.43,0c3.35938,0 6.35594,-3.37281 6.7725,-7.8475c0.43,-4.66281 -2.0425,-8.7075 -5.59,-9.03c-0.14781,-0.01344 -0.38969,-0.1075 -0.5375,-0.1075zM30.8525,4.085c-0.18812,0 -0.34937,0.08063 -0.5375,0.1075c-2.75469,0.41656 -4.47469,3.87 -3.87,7.74c0.56438,3.61469 2.92938,6.235 5.4825,6.235c0.18813,0 0.34938,0.02688 0.5375,0c2.75469,-0.41656 4.47469,-3.88344 3.87,-7.74c-0.55094,-3.61469 -2.92937,-6.3425 -5.4825,-6.3425zM16.8775,11.61c-0.68531,0 -1.34375,0.17469 -1.935,0.5375c-2.15,1.30344 -2.44562,4.64938 -0.7525,7.4175c1.23625,2.01563 3.13094,3.1175 4.945,3.1175c0.68531,0 1.34375,-0.17469 1.935,-0.5375c2.15,-1.30344 2.55313,-4.54187 0.86,-7.31c-1.23625,-2.01562 -3.23844,-3.225 -5.0525,-3.225zM6.7725,20.1025c-0.60469,0 -1.19594,0.1075 -1.72,0.43c-1.89469,1.16906 -2.19031,4.16563 -0.645,6.665c1.12875,1.81406 2.9025,2.795 4.515,2.795c0.60469,0 1.19594,-0.1075 1.72,-0.43c1.89469,-1.16906 2.19031,-4.16562 0.645,-6.665c-1.12875,-1.81406 -2.9025,-2.795 -4.515,-2.795zM40.7425,20.64c-18.00625,0 -37.3025,15.76219 -37.3025,39.2375c0,9.60781 1.96188,25.77313 7.525,39.6675c7.26969,18.15406 18.79906,27.735 33.325,27.735c15.56063,0 19.6725,-11.87875 19.6725,-18.92c0,-8.2775 -3.69531,-12.55062 -6.9875,-16.34c-2.98312,-3.42656 -5.59,-6.49031 -5.59,-12.685c0,-4.48812 4.24625,-8.64031 8.7075,-13.115c5.6975,-5.71094 12.1475,-12.22812 12.1475,-21.5c0,-16.00406 -10.58875,-24.08 -31.4975,-24.08zM102.0175,44.72c-1.00781,0 -2.0425,0.17469 -3.01,0.5375c-5.21375,1.96188 -7.57875,8.69406 -5.2675,15.05c1.88125,5.16 6.26188,8.4925 10.6425,8.4925c0.99438,0 2.0425,-0.17469 3.01,-0.5375c5.20031,-1.96187 7.57875,-8.69406 5.2675,-15.05c-1.89469,-5.16 -6.27531,-8.4925 -10.6425,-8.4925zM123.3025,44.8275c-0.14781,0 -0.37625,0.09406 -0.5375,0.1075c-3.5475,0.3225 -6.02,4.36719 -5.59,9.03c0.40313,4.46125 3.41313,7.8475 6.7725,7.8475c0.16125,0 0.26875,0.01344 0.43,0c3.5475,-0.3225 6.02,-4.36719 5.59,-9.03c-0.41656,-4.47469 -3.30562,-7.955 -6.665,-7.955zM141.1475,48.805c-2.55312,0 -4.91812,2.72781 -5.4825,6.3425c-0.60469,3.87 1.11531,7.32344 3.87,7.74c0.18813,0.02688 0.34938,0 0.5375,0c2.55313,0 4.91813,-2.62031 5.4825,-6.235c0.60469,-3.87 -1.11531,-7.32344 -3.87,-7.74c-0.18812,-0.02687 -0.34937,-0.1075 -0.5375,-0.1075zM155.1225,56.33c-1.81406,0 -3.81625,1.20938 -5.0525,3.225c-1.69312,2.76813 -1.27656,6.00656 0.86,7.31c0.59125,0.36281 1.24969,0.5375 1.935,0.5375c1.81406,0 3.70875,-1.10187 4.945,-3.1175c1.69313,-2.76812 1.3975,-6.11406 -0.7525,-7.4175c-0.59125,-0.36281 -1.24969,-0.5375 -1.935,-0.5375zM165.2275,64.8225c-1.62594,0 -3.38625,0.98094 -4.515,2.795c-1.54531,2.49938 -1.24969,5.49594 0.645,6.665c0.51063,0.3225 1.10188,0.43 1.72,0.43c1.6125,0 3.38625,-0.98094 4.515,-2.795c1.54531,-2.49937 1.24969,-5.49594 -0.645,-6.665c-0.51062,-0.3225 -1.11531,-0.43 -1.72,-0.43zM131.2575,65.36c-20.90875,0 -31.4975,8.07594 -31.4975,24.08c0,9.27188 6.45,15.78906 12.1475,21.5c4.46125,4.47469 8.7075,8.62688 8.7075,13.115c0,6.19469 -2.60687,9.15094 -5.59,12.5775c-3.29219,3.78938 -6.9875,8.17 -6.9875,16.4475c0,7.04125 4.11188,18.92 19.6725,18.92c14.52594,0 26.05531,-9.58094 33.325,-27.735c5.56313,-13.89437 7.525,-30.05969 7.525,-39.6675c0,-23.47531 -19.29625,-39.2375 -37.3025,-39.2375z"></path></g></g></g></svg>
+                    
+                     
+                 </li>
+                 <li>
+                   <button mat-button routerLink = "/allInformation" class="temsBtn"> <img src="https://img.icons8.com/bubbles/50/000000/book.png"> <span> Temas </span> </button>
+                 </li>
+                 <li>
+                   <button mat-button class="btnGalery" routerLink="/galery"><img src="https://img.icons8.com/bubbles/50/000000/stack-of-photos.png"> <span> Galeria </span></button>                
+                 </li>
+              </ul>
+        </mat-grid-tile>
+        <mat-grid-tile>
+           <ul class="menuSocial">
+             <li>
+                <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/carbon-copy/30/000000/instagram-new.png"></a>
+             </li>
+             <li>
+                <a id="linkBtn2" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://es-la.facebook.com/" > <img src="https://img.icons8.com/wired/30/000000/facebook-new.png"></a>
+             </li>
+           </ul>
+        </mat-grid-tile>
 
-<!--
-<mat-sidenav-container class="sidenav-container" (backdropClick)="onClickData()">
-  <mat-sidenav #sidenav  (keydown.escape)="onClickData()" disableClose>
-    <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item (click) = "onClickData('')">  <mat-icon>home</mat-icon> Inicio </a>
-      <a mat-list-item (click) = "onClickData('information')">   <i class="material-icons"> face </i> Que Ofrecemos</a>
-      <a mat-list-item (click) = "onClickData('allInformation')" > <mat-icon>description</mat-icon>  Temas </a>
-      <a mat-list-item (click) = "onClickData('contactus')" ><mat-icon>perm_contact_calendar</mat-icon> Contacto </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="accent">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="sidenav.open()"
-        >
-        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      <span> 
-        <h3><b> Childrens&Therapy </b></h3>
-      </span>
-       <div class="footTag">
-          <svg class="firstFoot" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="24" height="24"
-          viewBox="0 0 224 224"
-          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="#ff4081"></path><g fill="#ffffff"><path d="M138.13333,22.4c-6.18559,0 -11.2,6.68588 -11.2,14.93333c0,8.24745 5.01441,14.93333 11.2,14.93333c6.18559,0 11.2,-6.68588 11.2,-14.93333c0,-8.24745 -5.01441,-14.93333 -11.2,-14.93333zM113.91041,27.46042c-1.98124,0 -3.88125,1.04963 -5.28168,2.91778c-1.40043,1.86815 -2.18645,4.40164 -2.18499,7.04263c0.003,5.4941 3.34506,9.94583 7.46667,9.94583c4.12161,0 7.46367,-4.45173 7.46667,-9.94583c0.00146,-2.64099 -0.78456,-5.17448 -2.18499,-7.04263c-1.40043,-1.86815 -3.30044,-2.91778 -5.28168,-2.91778zM96.5125,35.21875c-3.55826,-0.00155 -6.44395,3.84386 -6.44583,8.58958c0.00188,4.74572 2.88757,8.59113 6.44583,8.58958c3.55257,-0.00918 6.42937,-3.85145 6.43125,-8.58958c-0.00187,-4.73814 -2.87868,-8.5804 -6.43125,-8.58958zM84.7,49.13125c-2.51936,-0.0018 -4.56289,2.72073 -4.56458,6.08125c-0.00209,1.61632 0.47797,3.16734 1.3343,4.31093c0.85632,1.14359 2.01854,1.78578 3.23029,1.78491c2.51793,-0.00893 4.55435,-2.73721 4.55,-6.09583c-0.00168,-3.35293 -2.03634,-6.07233 -4.55,-6.08125zM120.07916,59.73333c-20.6304,0 -45.39792,17.8304 -45.39792,44.8c0,22.4 14.91875,34.272 14.91875,63.46667c0,14.43304 11.70029,26.13333 26.13333,26.13333c14.43304,0 26.13333,-11.70029 26.13333,-26.13333c-0.00766,-1.80911 -0.20315,-3.61253 -0.58333,-5.38125c-0.07333,-0.36363 -0.16156,-0.72163 -0.24792,-1.07916c-0.25527,-1.01954 -0.57182,-2.02275 -0.94792,-3.00417c-3.90299,-11.1905 -13.15417,-19.78543 -13.15417,-31.60208c0,-16.27733 22.4,-15.77707 22.4,-37.33333c0,-16.94187 -12.16297,-29.86667 -29.25417,-29.86667zM78.4,64.70625c-2.05971,0 -3.73029,2.22526 -3.73333,4.97292c-0.00144,1.3221 0.39126,2.59071 1.09155,3.52626c0.70029,0.93555 1.6507,1.46124 2.64178,1.46124c0.99108,0 1.94149,-0.5257 2.64178,-1.46124c0.70029,-0.93555 1.09299,-2.20416 1.09155,-3.52626c-0.00304,-2.74765 -1.67362,-4.97292 -3.73333,-4.97292z"></path></g></g></svg>
-          <svg  class="secondFoot" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="24" height="24"
-          viewBox="0 0 224 224"
-          style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="#ff4081"></path><g fill="#ffffff"><path d="M85.86667,22.4c-6.18559,0 -11.2,6.68588 -11.2,14.93333c0,8.24745 5.01441,14.93333 11.2,14.93333c6.18559,0 11.2,-6.68588 11.2,-14.93333c0,-8.24745 -5.01441,-14.93333 -11.2,-14.93333zM110.08959,27.46042c-1.98124,0 -3.88125,1.04963 -5.28168,2.91778c-1.40043,1.86815 -2.18645,4.40164 -2.18499,7.04263c0.003,5.4941 3.34506,9.94583 7.46667,9.94583c4.12161,0 7.46367,-4.45173 7.46667,-9.94583c0.00146,-2.64099 -0.78456,-5.17448 -2.18499,-7.04263c-1.40043,-1.86815 -3.30044,-2.91778 -5.28168,-2.91778zM127.4875,35.21875c-3.55257,0.00918 -6.42937,3.85145 -6.43125,8.58958c0.00187,4.73814 2.87868,8.5804 6.43125,8.58958c3.55826,0.00155 6.44395,-3.84386 6.44583,-8.58958c-0.00188,-4.74572 -2.88757,-8.59113 -6.44583,-8.58958zM139.3,49.13125c-2.51366,0.00892 -4.54832,2.72832 -4.55,6.08125c-0.00435,3.35862 2.03207,6.08691 4.55,6.09583c1.21174,0.00087 2.37396,-0.64132 3.23029,-1.78491c0.85632,-1.14359 1.33639,-2.69461 1.3343,-4.31093c-0.00169,-3.36052 -2.04522,-6.08305 -4.56458,-6.08125zM103.92084,59.73333c-17.0912,0 -29.25417,12.9248 -29.25417,29.86667c0,21.55627 22.4,21.056 22.4,37.33333c0,11.97844 -9.49759,20.65044 -13.3,32.06875c-0.27269,0.74706 -0.51113,1.50619 -0.71458,2.275c-0.103,0.40965 -0.23488,0.80739 -0.32084,1.225c-0.3932,1.80633 -0.59363,3.64929 -0.59792,5.49792c0,14.43304 11.70029,26.13333 26.13333,26.13333c14.43304,0 26.13333,-11.70029 26.13333,-26.13333c0,-29.19467 14.91875,-41.06667 14.91875,-63.46667c0,-26.9696 -24.76752,-44.8 -45.39792,-44.8zM145.6,64.70625c-2.05971,0 -3.73029,2.22526 -3.73333,4.97292c-0.00144,1.3221 0.39126,2.59071 1.09155,3.52626c0.70029,0.93555 1.6507,1.46124 2.64178,1.46124c0.99108,0 1.94149,-0.5257 2.64178,-1.46124c0.70029,-0.93555 1.09299,-2.20416 1.09155,-3.52626c-0.00304,-2.74765 -1.67362,-4.97292 -3.73333,-4.97292z"></path></g></g></svg>
-       </div>
-       <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/material/24/000000/instagram-new.png"></a>
-       <a id="linkBtn2" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://es-la.facebook.com/" > <img src="https://img.icons8.com/material/24/000000/facebook.png"> </a>  
-    </mat-toolbar>
-    <router-outlet></router-outlet>  
-          
-  </mat-sidenav-content>
-</mat-sidenav-container>
--->
+    </mat-grid-list>
+</section> 
+<!-- header mobile-->
+<section class="header-mobile">
+          <div class="section_mobile">
+              <button mat-icon-button [matMenuTriggerFor]="menu" class="menuMobil">
+                  <i class="material-icons"> list</i>
+            </button>
+             <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink = "/">
+                      <mat-icon>home</mat-icon>
+                      <span>Inicio</span>
+                </button>    
+                <button mat-menu-item routerLink = "/allInformation">
+                  <mat-icon>description</mat-icon>
+                  <span>Temas</span>
+                </button>
+                <button mat-menu-item routerLink = "/galery">
+                  <mat-icon>perm_media</mat-icon>
+                  <span>Galeria</span>
+                </button>
+            </mat-menu> 
+          </div>
+          <ul class="menuSocialMobil">
+              <li>
+                 <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/carbon-copy/30/000000/instagram-new.png"></a>
+              </li>
+              <li>
+                 <a id="linkBtn2" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://es-la.facebook.com/" > <img src="https://img.icons8.com/wired/30/000000/facebook-new.png"></a>
+              </li>
+          </ul> 
+  </section>
+<section>
+  <router-outlet></router-outlet>
+</section> 

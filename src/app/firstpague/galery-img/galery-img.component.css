@@ -1,0 +1,37 @@
+.galeryImgData{
+    margin-top: 5.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #FFD8E8;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.cardIMGsize{
+    margin: 2rem;
+    width: 30%;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.btnshowGalrey{
+    margin-left: 19.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .galeryImgData{
+        margin-top: 5.2rem;
+    }
+    .cardIMGsize{
+        width: 85%;
+        margin: 0.5rem;
+        margin-top: 2rem;
+    }
+    .btnshowGalrey{
+      margin-left: 11.5rem;
+    }
+}

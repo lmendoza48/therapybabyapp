@@ -1,0 +1,47 @@
+.thirdgridNotMobile{
+    position: relative;
+    top: 6.5rem;
+}
+
+ul.allthirdText {
+    list-style: none;
+}
+
+ul.allthirdText li{
+    margin:1rem;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    line-height: 1.6;
+    color: #FF4081;
+}
+
+img.img-third-section{
+    width: 85%;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+.thirdgridMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .thirdgridNotMobile{
+        display: none;
+    }
+    .thirdgridMobile{
+        display: block;
+        margin-top: 25rem;
+    }
+    .allthirdTextMobile{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 1rem;
+        text-align: justify;
+        list-style: none;
+        color: #FF4081;
+    }
+    .img-third-section-mobile{
+        width: 90%;
+        margin-left: 1rem;
+    }
+}

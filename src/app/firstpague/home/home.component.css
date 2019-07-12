@@ -1,125 +1,58 @@
-div.container {
-    background: #EB6C8E;
-    background-size: cover;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-}
-div.titleChildren{
-    position: absolute;
-    width: 100%;
-    top: 78%;
-    height: 26%;
-    color:white;
-}
-div.titleChildren p {
-    font-family: 'Lobster Two', cursive;
-    font-size: 5rem;
-    text-align: -webkit-center;
+section.sectFooterPague{
     position: relative;
-    bottom: 33%;
+    top: 8.5rem;
+    height: 8rem;
+    color: #EB6C8E;
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-.footer_pague{
-    background: #EB6C8E;
+section ul.footer {
+    list-style: none;
     position: relative;
-    top: 39.9rem;
-    width: 100%;
-    height: 50%;
-}
-
-.btnContact{
-    font-family: 'Lobster Two', cursive;
-    font-size: 29px;
-    color: white;
-}
-
-.contactClass{
-    position: relative;
-    left: 25%;
-    top: 1.5rem;
-    width: 23%;
-}
-
-.maps_layout{
-    position: relative;
+    left: 31%;
     width: 50%;
-    left: 46%;
-    bottom: 1rem;
 }
-
-.redSocial{
+section ul.footer li{
+    display: inline-block;
+    padding: 0 1em 0 0;
+    margin-top: 2rem;
+}
+.copyRight{
     position: relative;
-    width: 6%;
-    left: 77%;
-    bottom: 2rem;
-}
-div.copyRight{
+    left: 26%;
     width: 50%;
-    color: white;
+}
+
+.firstdivder{
+    border-top: solid 2px rgba(210, 215, 217, 0.75);
     position: relative;
-    left: 30%;
-    bottom: 1rem;
+    top: 6rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
-mat-grid-list{
-    display: none;
-}
-
-@media only screen and (max-width: 800px) {
-    .footer_pague{
-        top: 38.9rem;
-        height: 15rem;
+@media only screen and (max-width: 500px) {
+    .firstdivder{
+        top: 4rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
-    .contactClass{
-        left: 33%;
-    }
-    .maps_layout{
-        left: 22%;
-        top: 3rem;
-    }
-    .redSocial {
-        width: 23%;
-        left: 43%;
-        top: 5rem;
-    }
-}    
-@media only screen and (max-width: 600px) {
-    div.container{
-        display: none;
-    }
-    mat-grid-list{
-        display: block;
-    }  
-    .footer_pague{
-        position: relative;
-        width: 100%;
-        height: 15rem;
-        top: 0.2rem;
-        background: #FF4081;
-    }
-    .contactClass{
-        left: 26%;
-    }
-    .maps_layout{
-        position: relative;
-        width: 90%;
-        left: 5%;
-        top: 3rem;
+    .secondDividerMobile{
+        top: 23rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
     .btnContact{
-        font-size: 27px;
-     } 
-     .redSocial {
         position: relative;
-        width: 22%;
-        left: 42%;
-        top: 4rem;
-    }   
-    div.copyRight{
-        width: 80%;
-        left: 14%;
-        top: 5rem;
+        right: 3rem;
     }
-  }
+    .mobileLocation{
+        right: 6rem;
+    }
+    .copyRight{
+        left: 10%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
 import { NgForm, FormControl, FormGroup } from '@angular/forms';
 import { SavemessageService } from 'src/app/services/savemessage.service';
-import { PopupAnswerComponent } from './popup-answer/popup-answer.component';
 
 @Component({
   selector: 'app-contact-us',
@@ -13,7 +12,6 @@ export class ContactUsComponent implements OnInit {
   
   /** Esto es para envio directo de email*/
   url = 'https://therapyapp-6edb2.firebaseio.com/function';
-  dialogRef : MatDialogRef<PopupAnswerComponent>;
 
   contactForm = {
     nameForm : '',
@@ -24,7 +22,7 @@ export class ContactUsComponent implements OnInit {
        
 
 
-  constructor(public dataServiceMessage : SavemessageService, public dialog : MatDialog, private snackBar : MatSnackBar) { }
+  constructor(public dataServiceMessage : SavemessageService, private snackBar : MatSnackBar) { }
 
   ngOnInit() {
     //necessary for initializer object firebase

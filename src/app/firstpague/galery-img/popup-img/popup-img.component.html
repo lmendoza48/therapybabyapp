@@ -1,0 +1,9 @@
+<slideshow [height]="'500px'"
+[backgroundSize] = "'cover'"
+[autoPlay]="true"
+[showArrows]="true"
+[imageUrls]="imageGaleryArray"
+[lazyLoad]="imageGaleryArray?.length > 1"
+[autoPlayWaitForLazyLoad]="true"
+[showDots] = "true" ></slideshow>
+<button mat-raised-button class="btnClosepopup" (click) = "onCloseDialog()" > Cerrar </button>

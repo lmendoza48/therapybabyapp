@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 import {
   trigger,
   state,
@@ -6,14 +6,13 @@ import {
   animate,
   transition
 } from '@angular/animations';
-import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
 
 @Component({
-  selector: 'app-whous',
-  templateUrl: './whous.component.html',
-  styleUrls: ['./whous.component.css'],
+  selector: 'app-third-section',
+  templateUrl: './third-section.component.html',
+  styleUrls: ['./third-section.component.css'],
   animations: [
-    trigger('scrollAnimation', [
+    trigger('scrollAnimationThird', [
       state('show', style({
         opacity: 1,
         transform: "translateX(0)"
@@ -25,7 +24,7 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
       transition('show => hide', animate('1100ms ease-out')),
       transition('hide => show', animate('1100ms ease-in'))
     ]),
-    trigger('scrollAnimationMobile', [
+    trigger('scrollAnimationThirdIMG', [
       state('show', style({
         opacity: 1,
         transform: "translateX(0)"
@@ -39,8 +38,8 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
     ])
   ]
 })
-export class WhousComponent implements OnInit {
-
+export class ThirdSectionComponent implements OnInit {
+  
   state = 'hide'
 
   constructor(public el: ElementRef) { }
@@ -60,6 +59,5 @@ export class WhousComponent implements OnInit {
     }
 
   }
-
 
 }

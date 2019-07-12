@@ -1,6 +1,19 @@
+.moreInformation{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 5.2rem;
+    background: #FFD8E8;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    height: fit-content;
+}
+
 .info-card2{
     width: 35%;
-    margin-top: 6rem;
+    margin-top: 3rem;
     margin-left: 25rem;
     margin-bottom: 2rem;
     border-radius: 1rem;

@@ -2,7 +2,10 @@
    background-image: url('../../img/savory.png');
    background-size: cover;
    position: absolute;
-   margin-top: 4rem;
+   margin-top: 5.2rem;
+   border-top-left-radius: 1.5rem;
+   border-top-right-radius: 1.5rem;
+   height: fit-content;
 }
 
 div.serchD{
@@ -51,8 +54,9 @@ div.btnFooter{
 
 @media only screen and (max-width: 600px) {
    .contanierAll{
-      margin-top: 3.5rem;
       background-size: inherit;
+      margin-top: 5.2rem;
+      width: 100%
    }
 
    div.container{
