@@ -116,7 +116,7 @@ form{
 @media only screen and (max-height: 600px) {
     
     .buttonActiveShow {
-        left: 60% !important;
+        left: 75% !important;
         top: 32rem;
     }
     .mat-card{
