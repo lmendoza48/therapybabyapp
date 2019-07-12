@@ -25,11 +25,13 @@
 @media only screen and (max-width: 500px) {
     .galeryImgData{
         margin-top: 5.2rem;
+        height: fit-content;
     }
     .cardIMGsize{
         width: 85%;
         margin: 0.5rem;
         margin-top: 2rem;
+        margin-bottom: 3rem;
     }
     .btnshowGalrey{
       margin-left: 11.5rem;

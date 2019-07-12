@@ -31,7 +31,8 @@ ul.listWhoisText li p{
     .secondgridMobile{
         display: block;
         top: 4rem;
-        margin-left: 1rem
+        margin-left: 1rem;
+        width: 90%;   
     }
     .gridTitleMobile{
         font-family: 'Montserrat', sans-serif;
@@ -46,18 +47,18 @@ ul.listWhoisText li p{
         left: 19%;
         right: 0%;
         width: 65%;
-        height: 269%;
+        height: 95%;
         border-radius: 10rem;
     }
     .gridTwoMobile{
-        height: 18rem;
+        height: 24rem;
     }
     .gridContentMobileText{
         font-family: 'Montserrat', sans-serif;
         list-style: none;
         color: #FF4081;
         text-align: justify;
-
+        margin-top: 1rem;
     }
 }
 

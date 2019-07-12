@@ -31,7 +31,8 @@ img.img-third-section{
     }
     .thirdgridMobile{
         display: block;
-        margin-top: 25rem;
+        margin-top: 30rem;
+        width: 90%;
     }
     .allthirdTextMobile{
         font-family: 'Montserrat', sans-serif;
@@ -43,5 +44,7 @@ img.img-third-section{
     .img-third-section-mobile{
         width: 90%;
         margin-left: 1rem;
+        border-bottom-left-radius: 3rem;
+        border-top-right-radius: 3rem;
     }
 }
