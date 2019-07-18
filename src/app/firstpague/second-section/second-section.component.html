@@ -27,19 +27,19 @@
     </mat-grid-tile>
 </mat-grid-list>
 
-<mat-grid-list class="secondgridMobile" cols="1">
-    <mat-grid-tile>
-        <ul class="gridTitleMobile" [@scrollAnimationIMG]="state">
+<section class="secondgridMobile">
+    <div style="text-align: center">
+        <ul class="gridTitleMobile" [@scrollAnimationMobile1]="state">
             <li>
                 <h1>Childrens & Therapy</h1>
             </li>
             <li style="margin-bottom: 9rem">
-               <div class="imgLogo"></div>
+               <img style="border-radius: 10rem;" src="../../../assets/img/logoTerapia.jpg" alt="logo">
             </li>
         </ul>
-    </mat-grid-tile>
-    <mat-grid-tile class="gridTwoMobile">
-        <ul class="gridContentMobileText" [@scrollAnimation]="state">
+    </div>
+    <div class="textQuien">
+		<ul class="gridContentMobileText" [@scrollAnimationMobile2]="state">
             <li>
                 <h1>¿Quienes somos?</h1>
             </li>
@@ -60,5 +60,5 @@
                     </p>
             </li>
         </ul>
-    </mat-grid-tile>
-</mat-grid-list>
+    </div>
+</section>

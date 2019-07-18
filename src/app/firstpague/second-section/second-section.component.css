@@ -30,9 +30,13 @@ ul.listWhoisText li p{
     }
     .secondgridMobile{
         display: block;
-        top: 4rem;
         margin-left: 1rem;
+        margin-top: 7rem;
         width: 90%;   
+    }
+    div.textQuien{
+        position: relative;
+        bottom: 6rem;
     }
     .gridTitleMobile{
         font-family: 'Montserrat', sans-serif;
@@ -42,10 +46,6 @@ ul.listWhoisText li p{
         color: #FF4081;  
     }
     .imgLogo{
-        background-image: url("../../img/logoTerapia.jpg");
-        position: absolute;
-        left: 19%;
-        right: 0%;
         width: 65%;
         height: 95%;
         border-radius: 10rem;

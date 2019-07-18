@@ -35,8 +35,33 @@ import {
       })),
       transition('show => hide', animate('1100ms ease-out')),
       transition('hide => show', animate('1100ms ease-in'))
+    ]),
+    trigger('scrollAnimationMobile1', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateY(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateY(-100%)"
+      })),
+      transition('show => hide', animate('1100ms ease-out')),
+      transition('hide => show', animate('1100ms ease-in'))
+    ]),
+    trigger('scrollAnimationMobile2', [
+      state('show', style({
+        opacity: 1,
+        transform: "translateY(0)"
+      })),
+      state('hide',   style({
+        opacity: 0,
+        transform: "translateY(100%)"
+      })),
+      transition('show => hide', animate('1100ms ease-out')),
+      transition('hide => show', animate('1100ms ease-in'))
     ])
-  ]
+  ],
+  
 })
 export class SecondSectionComponent implements OnInit {
    

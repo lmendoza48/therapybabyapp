@@ -12,7 +12,7 @@
 }
 
 .containerImg{
-    background-image: url("../../img/contactUS2.png");
+    background-image: url("../../../assets/img/contactUS2.png");
     background-size: cover;
     position: absolute;
     width: 100%;

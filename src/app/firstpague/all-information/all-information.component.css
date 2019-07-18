@@ -1,5 +1,5 @@
 .contanierAll{
-   background-image: url('../../img/savory.png');
+   background-image: url('../../../assets/img/savory.png');
    background-size: cover;
    position: absolute;
    margin-top: 5.2rem;
@@ -56,7 +56,7 @@ div.btnFooter{
    .contanierAll{
       background-size: inherit;
       margin-top: 5.2rem;
-      width: 100%
+      width: 98%
    }
 
    div.container{
