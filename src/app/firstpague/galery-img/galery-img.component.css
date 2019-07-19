@@ -9,7 +9,6 @@
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
 }
-
 .cardIMGsize{
     margin: 2rem;
     width: 30%;
@@ -19,21 +18,21 @@
     border-bottom-right-radius: 2rem;
 }
 .btnshowGalrey{
-    margin-left: 19.5rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     .galeryImgData{
-        margin-top: 5.2rem;
-        height: fit-content;
+        margin-top: 3.2rem;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
     }
     .cardIMGsize{
-        width: 85%;
-        margin: 0.5rem;
+        width: -moz-available; 
+        width: -webkit-fill-available;
+        margin: 1rem;
         margin-top: 2rem;
         margin-bottom: 3rem;
-    }
-    .btnshowGalrey{
-      margin-left: 11.5rem;
     }
 }

@@ -53,49 +53,28 @@ ul.menuSocial li a#linkBtn1{
    display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    .header-section{
+@media only screen and (max-width: 800px) {
+    .header-section,.header-mobile2{
         display: none;
-    }
-    .section_mobile{
-        height: 5rem;
-        width: 50%;
-        margin-left: 1rem;
     }
     .header-mobile{
         display: block;
-        border-bottom: solid 5px #f56a6a;
-        width: 98%;
         position: fixed;
-        top: 0;
         z-index: 1000;
         background: white;
+        border-bottom: solid 5px #f56a6a;
     }
-    .btntitleMenu{
-        position: fixed;
-        left: 5%;
-        top: 5%;
-    }
-    h2.titleHeader{
+    div.firstButtom{
+        text-align: right;
         position: relative;
         bottom: 2rem;
-        left: 22%;
-        width: 70%;
+        right: 2.5rem;
+        margin-left: 13rem;
     }
-    .iconbabyfoot{
-        position: absolute;
-        left: 80%;
-        bottom: 85%;
-    }
-    .menuMobil{
+    div.secondButtom{
+        text-align: right;
         position: relative;
-        top: 1.5rem;
+        bottom: 4.4rem;
+        margin-left: 16rem;
     }
-    .menuSocialMobil{
-        list-style: none;
-        display: inline-flex;
-        position: absolute;
-        left: 65%;
-        bottom: 0%;
-    }   
 }

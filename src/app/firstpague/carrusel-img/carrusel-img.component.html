@@ -7,3 +7,16 @@
   [autoPlayWaitForLazyLoad]="true"
   [showDots] = "true" ></slideshow>
 </div>
+
+<mat-grid-list cols="1" class="icarruselMOBILE">
+    <mat-grid-tile class="gridMObileti">
+        <slideshow class="slMOBILE"
+        [height]="'300px'"
+        [autoPlay]="true"
+        [showArrows]="true"
+        [imageUrls]="imageUrlArray"
+        [lazyLoad]="imageUrlArray?.length > 1"
+        [autoPlayWaitForLazyLoad]="true"
+        [showDots] = "true" ></slideshow>
+    </mat-grid-tile>
+</mat-grid-list>

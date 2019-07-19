@@ -31,6 +31,20 @@ img.img-third-section{
     }
     .thirdgridMobile{
         display: block;
+        margin-top: 25rem;
+    }
+
+    .allthirdTextMobile{
+        text-align: left;
+        list-style: none;
+        margin-right: 1rem;
+        color: #FF4081;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*
+    .thirdgridMobile{
+        display: block;
         margin-top: 5rem;
         width: 90%;
     }
@@ -46,5 +60,5 @@ img.img-third-section{
         margin-left: 1rem;
         border-bottom-left-radius: 3rem;
         border-top-right-radius: 3rem;
-    }
+    }*/
 }

@@ -36,29 +36,17 @@ div.titleCards{
 }
 
 div.btnFooter{
-   position: relative;
-   left: 74%;
-   top: 14%;
-   width: 31%;
+   text-align: right;
+   margin-top: 1rem;
 }
 
 @media only screen and (max-width: 800px) {
-   div.container{
-      margin-left: 15%;
-   }
-   mat-form-field.example-full-width{
-      margin-left: 10%;
-      width: 50%;
-   }
-}
-
-@media only screen and (max-width: 600px) {
    .contanierAll{
       background-size: inherit;
-      margin-top: 5.2rem;
-      width: 98%
+      margin-top: 3.2rem;
+      width: -webkit-fill-available;
+      width: -moz-available;
    }
-
    div.container{
       margin-left: 3% !important;
    }
@@ -68,12 +56,8 @@ div.btnFooter{
       margin-left: 2% !important;
    }
    .example-card{
-      width: 18rem;
-   }
-}
-
-@media only screen and (max-width: 330px) {
-   .example-card{
-      width: 16rem !important;
+      width: -moz-available; 
+      width: -webkit-fill-available;
+      margin-right: 1rem;
    }
 }

@@ -31,33 +31,33 @@ section ul.footer li{
     margin-left: 8rem;
     margin-right: 8rem;
 }
+.sectFooterPagueMOBILE{
+    display: none;
+}
 
-@media only screen and (max-width: 500px) {
-    .firstdivder{
-        top: 4rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
+@media only screen and (max-width: 800px) {
+    .sectFooterPague{
+        display: none;
     }
-    .secondDividerMobile{
-        top: 0rem;
+    .sectFooterPagueMOBILE{
+        display: block;
+        margin-top: 3rem;
+        border-top: solid 2px rgba(210, 215, 217, 0.75);
+    }
+    .footerMobile{
+       text-align: center;
+       list-style: none;
+       color: #EB6C8E;
+       margin-right: 1rem;
+    }
+    .firstdivder{
         margin-left: 4rem;
         margin-right: 4rem;
     }
-    .btnContact{
-        position: relative;
-        right: 3rem;
+    .secondDividerMobile{
+        top: 20rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
-    .mobileLocation{
-        right: 6rem;
-    }
-    .copyRight{
-        left: 10%;
-        width: 90%;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-    .sectFooterPague{
-        top: 0.5rem !important;
-    }
-
+   
 }

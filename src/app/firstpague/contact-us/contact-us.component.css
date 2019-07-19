@@ -37,19 +37,16 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .containAllinfo{
-    width: 85%;
-    left: 5%;
-  }   
-}
-@media only screen and (max-width: 600px) {
     .containerImg{
-        margin-top: 7rem;
+        margin-top: 5rem;
     }
     .containAllinfo{
-        top: 3%;
-        width: 81%;
+        top: 0%;
+        width: -moz-available; 
+        width: -webkit-fill-available;
         margin-bottom: 2rem;
+        margin-right: 2rem;
+        left: 5%;
     }
 }
 

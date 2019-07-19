@@ -4,7 +4,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    margin-top: 5.2rem;
+    margin-top: 3.2rem;
     background: #FFD8E8;
     border-top-right-radius: 2rem;
     border-top-left-radius: 2rem;
@@ -44,16 +44,11 @@
     margin-bottom: 8px;
 }
 
-@media only screen and (max-width: 600px) {
-    .info-card2{
-        width: 81% !important;
-        margin-left: 1.5rem !important;
-    }
-}
-
 @media only screen and (max-width: 800px) {
-    .info-card2 {
-        width: 75%;
-        margin-left: 4rem;
+    .info-card2{
+        width: -moz-available; 
+        width: -webkit-fill-available !important;
+        margin-right: 1rem;
+        margin-left: 1rem !important;
     }
 }
