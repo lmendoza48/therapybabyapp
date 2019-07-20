@@ -24,7 +24,14 @@ ul.listWhoisText li p{
 .secondgridMobile{
     display: none;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
+    .colNewIpad{
+        height: 24rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     .secondgridNotMobile{
         display: none;
     }

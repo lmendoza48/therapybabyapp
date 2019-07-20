@@ -25,7 +25,15 @@ img.img-third-section{
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .thirdgridNotMobile[_ngcontent-c13] {
+        position: relative;
+        margin-top: 36rem;
+        top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     .thirdgridNotMobile{
         display: none;
     }
@@ -41,24 +49,4 @@ img.img-third-section{
         color: #FF4081;
         font-family: 'Montserrat', sans-serif;
     }
-
-    /*
-    .thirdgridMobile{
-        display: block;
-        margin-top: 5rem;
-        width: 90%;
-    }
-    .allthirdTextMobile{
-        font-family: 'Montserrat', sans-serif;
-        margin-left: 1rem;
-        text-align: justify;
-        list-style: none;
-        color: #FF4081;
-    }
-    .img-third-section-mobile{
-        width: 90%;
-        margin-left: 1rem;
-        border-bottom-left-radius: 3rem;
-        border-top-right-radius: 3rem;
-    }*/
 }
