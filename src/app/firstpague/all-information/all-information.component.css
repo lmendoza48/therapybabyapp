@@ -1,17 +1,16 @@
 .contanierAll{
-   background-image: url('../../../assets/img/savory.png');
+   background: url('../../../assets/img/savory.png') no-repeat fixed center; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    background-size: cover;
-   position: absolute;
-   margin-top: 5.2rem;
+   margin-top: 5.4rem;
    border-top-left-radius: 1.5rem;
    border-top-right-radius: 1.5rem;
-   height: fit-content;
 }
 
 div.serchD{
-   margin-top: 2%;
-   margin-bottom: 2%;
-   margin-left: 3%;
+   padding: 2rem;
 }
 
 mat-form-field.example-full-width{
@@ -26,8 +25,8 @@ div.container{
     margin: 0.5rem;
     width: 21rem;
     height: 12rem;
-    float: left;
     border-radius: 1rem;
+    display: inline-grid;
 }
 
 div.titleCards{
@@ -42,10 +41,13 @@ div.btnFooter{
 
 @media only screen and (max-width: 800px) {
    .contanierAll{
-      background-size: inherit;
-      margin-top: 3.2rem;
+      margin-top: 0rem;
       width: -webkit-fill-available;
       width: -moz-available;
+   }
+   div.serchD{
+      padding: 1rem;
+      padding-top: 4rem;
    }
    div.container{
       margin-left: 3% !important;

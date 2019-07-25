@@ -1,3 +1,11 @@
+<section>
+   <div class="btnClosepopup">
+      <button mat-icon-button color="accent" (click) = "onCloseDialog()" >
+         <i class="material-icons">
+                clear
+         </i>
+      </button>
+    </div>
 <slideshow [height]="'500px'"
 [backgroundSize] = "'cover'"
 [autoPlay]="true"
@@ -6,4 +14,7 @@
 [lazyLoad]="imageGaleryArray?.length > 1"
 [autoPlayWaitForLazyLoad]="true"
 [showDots] = "true" ></slideshow>
-<button mat-raised-button class="btnClosepopup" (click) = "onCloseDialog()" > Cerrar </button>
+
+</section>
+
+
