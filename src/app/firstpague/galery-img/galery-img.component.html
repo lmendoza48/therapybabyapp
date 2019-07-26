@@ -1,11 +1,10 @@
 <div class="galeryImgData">
-    <mat-card class="cardIMGsize">
-        <h2>Nuestro Primer Taller</h2>
-          <img mat-card-image src="https://res.cloudinary.com/dqqmkhxna/image/upload/v1562681080/new%20carpet/tallerCapicitacion_hdey98.png">
-          
-          <mat-card-actions align="end" class="btnshowGalrey">
-              <button mat-button color="basic" (click) = "openDialog()" > <img src="https://img.icons8.com/ios-glyphs/30/000000/compact-camera.png"> Ver  </button>
-          </mat-card-actions> 
+   <mat-card class="cardIMGsize" *ngFor="let imgItem of listGalery">
+       <h2>{{imgItem.titleGal}}</h2>
+         <img mat-card-image [src]="imgItem.imgPresent">
+        <mat-card-actions align="end" class="btnshowGalrey">
+            <button mat-button color="basic" (click) = "openDialog(imgItem)" > <img src="https://img.icons8.com/ios-glyphs/30/000000/compact-camera.png"> Ver  </button>
+        </mat-card-actions> 
     </mat-card>
 </div>
 

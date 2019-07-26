@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { GaleryModel } from 'src/app/model/galery-model';
 
 @Component({
   selector: 'app-popup-img',
@@ -10,16 +11,15 @@ export class PopupIMGComponent implements OnInit {
   
   imageGaleryArray = [];
 
-  constructor(public dialogRef : MatDialogRef<PopupIMGComponent>) { }
+  constructor(public dialogRef : MatDialogRef<PopupIMGComponent>,
+              @Inject(MAT_DIALOG_DATA) public data: GaleryModel) { }
 
   ngOnInit() {
-    this.imageGaleryArray = [
-      "https://res.cloudinary.com/dqqmkhxna/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562683153/new%20carpet/IMG_20190526_112749364_upo3le.jpg",
-      "https://res.cloudinary.com/dqqmkhxna/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562683156/new%20carpet/IMG_20190526_112039671_mtw1do.jpg",
-      "https://res.cloudinary.com/dqqmkhxna/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1562683156/new%20carpet/IMG_20190526_112052847_kc5s0e.jpg",
-      "https://res.cloudinary.com/dqqmkhxna/image/upload/v1562683156/new%20carpet/IMG_20190526_134024140_HDR_kkwhbv.jpg",
-      "https://res.cloudinary.com/dqqmkhxna/image/upload/v1562683154/new%20carpet/IMG_20190526_112421835_nrdhlz.jpg",
-      "https://res.cloudinary.com/dqqmkhxna/image/upload/v1562683153/new%20carpet/IMG_20190526_140148063_HDR_t6l8y0.jpg"];
+    let dd = this.data.urlCarrusel;
+    Object.entries(dd).forEach(([key, value]) => {
+         this.imageGaleryArray.push(value); 
+       }
+    );
   }
 
   onCloseDialog(): void {

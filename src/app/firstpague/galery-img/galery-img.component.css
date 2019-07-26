@@ -1,21 +1,21 @@
 .galeryImgData{
+    background:  #FFD8E8 no-repeat fixed center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin-top: 5.2rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #FFD8E8;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    padding-bottom: 4.5rem;
 }
 .cardIMGsize{
     margin: 2rem;
     width: 30%;
-    float: left;
     font-family: 'Montserrat', sans-serif;
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    display: inline-grid;
 }
 .btnshowGalrey{
     margin-right: 0rem;
@@ -24,8 +24,9 @@
 
 @media only screen and (max-width: 800px) {
     .galeryImgData{
-        margin-top: 2rem;
-        padding-top: 1rem;
+        margin-top: 0rem;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
         height: auto;
     }
     .cardIMGsize{
@@ -33,6 +34,6 @@
         width: -webkit-fill-available;
         margin: 1rem;
         margin-top: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 }
