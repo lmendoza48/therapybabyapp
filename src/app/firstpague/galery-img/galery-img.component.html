@@ -1,7 +1,7 @@
 <div class="galeryImgData">
    <mat-card class="cardIMGsize" *ngFor="let imgItem of listGalery">
-       <h2>{{imgItem.titleGal}}</h2>
-         <img mat-card-image [src]="imgItem.imgPresent">
+    <mat-card-subtitle>  {{imgItem.titleGal}} </mat-card-subtitle>
+         <img mat-card-image [src]="imgItem.imgPresent" width="300" height="340">
         <mat-card-actions align="end" class="btnshowGalrey">
             <button mat-button color="basic" (click) = "openDialog(imgItem)" > <img src="https://img.icons8.com/ios-glyphs/30/000000/compact-camera.png"> Ver  </button>
         </mat-card-actions> 
