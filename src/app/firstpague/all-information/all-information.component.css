@@ -1,5 +1,5 @@
 .contanierAll{
-   background: url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506500/temas%20img/imgOther_fp4vq6.jpg') no-repeat fixed center; 
+   background: url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506500/temas%20img/imgOther_fp4vq6.jpg') no-repeat center center fixed; 
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -44,6 +44,8 @@ div.btnFooter{
       margin-top: 0rem;
       width: -webkit-fill-available;
       width: -moz-available;
+      height: 100%;
+      overflow: hidden;
    }
    div.serchD{
       padding: 1rem;

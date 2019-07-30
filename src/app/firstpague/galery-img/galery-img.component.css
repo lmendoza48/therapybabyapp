@@ -1,5 +1,5 @@
 .galeryImgData{
-    background:  url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506497/temas%20img/temaImg_yg5d8v.jpg') no-repeat fixed center; 
+    background:  url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506497/temas%20img/temaImg_yg5d8v.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,6 +37,7 @@ button:hover{
         padding-top: 3rem;
         padding-bottom: 1rem;
         height: auto;
+        overflow: hidden;
     }
     .mat-card-image {
         height: auto;
