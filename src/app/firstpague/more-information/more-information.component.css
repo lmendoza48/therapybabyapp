@@ -44,7 +44,7 @@
 
 @media only screen and (max-width: 800px) {
     .moreInformation{
-        background: url('../../../assets/img/temaImg.jpg') no-repeat center fixed; 
+        background: url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506497/temas%20img/temaImg_yg5d8v.jpg') no-repeat center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
