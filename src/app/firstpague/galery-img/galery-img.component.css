@@ -1,5 +1,5 @@
 .galeryImgData{
-    background:  #FFD8E8 no-repeat fixed center; 
+    background:  url('../../../assets/img/temaImg.jpg') no-repeat fixed center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,7 +7,7 @@
     margin-top: 5.2rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    padding-bottom: 2.8rem;
+    padding-bottom: 1.5rem;
 }
 .cardIMGsize{
     margin: 2rem;
@@ -36,6 +36,9 @@ button:hover{
         margin-top: 0rem;
         padding-top: 3rem;
         padding-bottom: 1rem;
+        height: auto;
+    }
+    .mat-card-image {
         height: auto;
     }
     .cardIMGsize{
