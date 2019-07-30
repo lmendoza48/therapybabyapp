@@ -41,10 +41,14 @@ div.btnFooter{
 
 @media only screen and (max-width: 800px) {
    .contanierAll{
-      margin-top: 0rem;
+      background:  url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506497/temas%20img/temaImg_yg5d8v.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       width: -webkit-fill-available;
       width: -moz-available;
-      height: 100%;
+      margin-top: 0rem;
       overflow: hidden;
    }
    div.serchD{
