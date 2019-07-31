@@ -53,6 +53,6 @@ img.img-third-section{
 
 @media only screen and (max-width: 330px) {
     .gridOfrecemosMobil{
-        height: 3rem;
+        height: 5rem;
     }
 }

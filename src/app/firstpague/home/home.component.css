@@ -68,8 +68,8 @@ section ul.footer li{
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 330px) {
     .sectFooterPagueMOBILE{
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
 }
