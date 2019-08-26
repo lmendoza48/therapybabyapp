@@ -5,16 +5,21 @@
     </mat-form-field>
   </div>
   <div class="container">
+      <mat-spinner *ngIf="flagProgress"></mat-spinner>
       <mat-card class="example-card" *ngFor = "let cList of cardList | filter :datafilter ; let l = count">
             <div class="titleCards">
                 {{cList.title}}
               </div>
-              <mat-card-content>
+              <img mat-card-image [src]="cList.urlImg" width="100" height="200" >
+              <!--
+             <mat-card-content>
                 <p style="text-align: justify;
                 padding-left: 1rem;" >
                    {{cList.alltext | slice:0:100}}...
                 </p>
             </mat-card-content>
+              -->
+              
             <div class="btnFooter">
                   <button mat-button   color="accent" (click) = "onItemClick(cList)" >Ver Mas</button>
             </div>       

@@ -12,6 +12,7 @@ export class AllInformationComponent implements OnInit {
 
   cardList : Datatext[];
   datafilter = "";
+  flagProgress: boolean = true;
 
   constructor(public allCardInfo : InformationsService, public router : Router) { }
 
@@ -24,6 +25,7 @@ export class AllInformationComponent implements OnInit {
           y["$key"] = element.key;
           this.cardList.push(y as Datatext);
         });
+       this.flagProgress = false;
     });
   }
 
