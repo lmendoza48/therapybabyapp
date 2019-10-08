@@ -11,8 +11,10 @@ import { Router } from '@angular/router';
 export class AllInformationComponent implements OnInit {
 
   cardList : Datatext[];
+  cardListFilter : Datatext[];
   datafilter = "";
   flagProgress: boolean = true;
+  flagFilter = false;
 
   constructor(public allCardInfo : InformationsService, public router : Router) { }
 
@@ -25,6 +27,7 @@ export class AllInformationComponent implements OnInit {
           y["$key"] = element.key;
           this.cardList.push(y as Datatext);
         });
+       this.cardListFilter = this.cardList;
        this.flagProgress = false;
     });
   }
@@ -42,6 +45,19 @@ export class AllInformationComponent implements OnInit {
       }
       this.router.navigate(['/information']);
       //this.allCardInfo.getOneDataFirebase(data.$key);
+  }
+
+  clearFilter(){
+    this.cardListFilter = this.cardList.filter(item => {
+      return item.title.toLowerCase().indexOf(this.datafilter.toLowerCase()) > -1;
+    });
+    
+    if(this.cardListFilter.length > 0){
+      this.flagFilter = false;
+    }else{
+      this.flagFilter = true;
+    }
+
   }
 
 }

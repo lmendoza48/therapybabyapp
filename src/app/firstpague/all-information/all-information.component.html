@@ -1,7 +1,7 @@
 <div class="contanierAll">
   <div class="serchD">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Buscar" [(ngModel)] = "datafilter">
+      <input matInput placeholder="Buscar" [(ngModel)] = "datafilter" (ngModelChange)="clearFilter()">
     </mat-form-field>
   </div>
   
@@ -10,7 +10,7 @@
   </div>
 
   <div class="container">
-      <mat-card class="example-card" *ngFor = "let cList of cardList | filter :datafilter ; let l = count">
+      <mat-card class="example-card" *ngFor = "let cList of cardListFilter">
         <div class="titleCards">
             {{cList.title}}
           </div>
@@ -28,6 +28,18 @@
               <button mat-button   color="accent" (click) = "onItemClick(cList)" >Ver Mas</button>
         </div>       
      </mat-card>
+     
+     <div class="error-card-all" *ngIf="flagFilter">
+        <mat-card class="example-card-error" >
+            <img class="card-img" mat-card-image src="https://img.pngio.com/xpop-up-alertpngpagespeedicvwzzznkrf-hunters-glen-alert-png-777_808.png">
+            <mat-card-content>
+              <p>
+                No se encontro ningun tema, por favor escriba otra palabra.
+              </p>
+            </mat-card-content>
+          </mat-card>
+     </div>
+
   </div>
 </div>  
   

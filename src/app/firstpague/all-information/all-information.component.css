@@ -28,6 +28,20 @@ div.container{
     border-radius: 1rem;
     display: inline-grid;
 }
+.error-card-all{
+   text-align: -webkit-center;
+}
+.example-card-error{
+   width: 40%;
+   text-align: center;
+   margin-bottom: 5%;
+   border-radius: 1rem;
+}
+
+.card-img{
+   width: 50%;
+   margin-top: 0.5rem !important;
+}
 
 div.titleCards{
    font-family: 'Indie Flower', cursive;
@@ -79,5 +93,10 @@ div.btnFooter{
    .spinnerF{
       margin: 7rem;
       padding-bottom: 8rem;
+   }
+
+   .example-card-error{
+    width: 80%;
+    margin-bottom: 66%;
    }
 }
