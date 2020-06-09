@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ChatbotService } from '../services/chatbot.service';
 
 import { Chatbot } from '../model/chatbot';
+import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-chat-bot',
@@ -38,7 +39,18 @@ export class ChatBotComponent implements OnInit {
          this.listChatMssg = [];
          this.services.onCLoseWindow();
      }else{
+        let itemsFirst = [{
+             'chat':'!Hola¡ soy terapy_Bot, para ayudarte en lo que necesites.',
+             'sentBy' : 'bot'
+        },
+        {
+          'chat':'presiona cualquiera de estos dos botones para continuar, o has me cualquier consulta.',
+          'sentBy' : 'bot'
+        }];
+         this.listChatMssg = itemsFirst;
          this.show = false;
+         this.services.firstMsg(itemsFirst);
+
      }
       
   }

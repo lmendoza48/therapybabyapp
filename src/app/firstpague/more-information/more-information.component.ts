@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { InformationsService } from 'src/app/services/informations.service';
+import { DOCUMENT } from '@angular/platform-browser';
 
 
 @Component({
@@ -17,12 +18,16 @@ export class MoreInformationComponent implements OnInit {
   like : number;
   notLike : number;
 
-  constructor(public router : Router, public servicesInformation : InformationsService) { }
+  constructor(@Inject(DOCUMENT) private document: Document, public router : Router, public servicesInformation : InformationsService) { }
 
   ngOnInit() {
+    this.document.body.scrollTop = 0;
+    this.document.documentElement.scrollTop = 0;
     let listText = sessionStorage.getItem('dato');
     if(listText != null){
       this.inform = listText.split('\n');
+    }else{
+      this.router.navigate(['/allInformation']);
     }
     this.like = +sessionStorage.getItem('like');
     this.notLike = +sessionStorage.getItem('NotLike');  

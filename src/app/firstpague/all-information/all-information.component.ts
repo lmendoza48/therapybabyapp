@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Datatext } from 'src/app/model/datatext';
 import { InformationsService } from 'src/app/services/informations.service';
 import { Router } from '@angular/router';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-all-information',
@@ -16,9 +17,11 @@ export class AllInformationComponent implements OnInit {
   flagProgress: boolean = true;
   flagFilter = false;
 
-  constructor(public allCardInfo : InformationsService, public router : Router) { }
+  constructor(@Inject(DOCUMENT) private document: Document, public allCardInfo : InformationsService, public router : Router) { }
 
   ngOnInit() {
+    this.document.body.scrollTop = 0;
+    this.document.documentElement.scrollTop = 0;
     var obj = this.allCardInfo.getInformation();
     obj.snapshotChanges().subscribe(item => {
         this.cardList = [];

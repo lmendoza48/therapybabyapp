@@ -1,5 +1,8 @@
 .moreInformation{
-    background:  #FFD8E8 no-repeat fixed center; 
+    /*background:  #FFD8E8 no-repeat fixed center; 
+*/
+background: url('https://res.cloudinary.com/dqqmkhxna/image/upload/v1564506497/temas%20img/temaImg_yg5d8v.jpg') no-repeat center center fixed;
+ 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,8 +10,8 @@
     margin-top: 5.2rem;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+ /*   border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;*/
 }
 
 .info-card2{

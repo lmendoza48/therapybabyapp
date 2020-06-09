@@ -18,14 +18,17 @@ export class ChatbotService {
   constructor() { }
 
   onSaveMessage(mgs : string){
-    if(!this.flagChat){
+    /*if(!this.flagChat){
       this.flagChat = true;
       this.updateData(mgs, 'user');
       mgs = 'buenos dias';
     }else{
-      if(mgs != 'Terapia' && !mgs.includes('Contacto'))
-        this.updateData(mgs, 'user');
+      
+    }*/
+    if(mgs != 'Terapia' && !mgs.includes('Contacto')){
+       this.updateData(mgs, 'user');
     }
+        
     return this.client.textRequest(mgs)
         .then((res) => 
                 {
@@ -40,7 +43,7 @@ export class ChatbotService {
 
 updateData(msg? : string, sentBy? : string){
 
-  if(msg != undefined &&  msg != undefined )
+  if(msg != undefined &&  sentBy != undefined )
       this.chatMssgList.push({
         sentBy: sentBy,
         chat: msg
@@ -54,6 +57,17 @@ onCLoseWindow(){
     this.chatMssgList = [];
     this.flagChat = false;
 
+}
+
+firstMsg(arrayD){
+   this.chatMssgList = arrayD;
+     
+   /* return this.client.textRequest(msg).then((res)=>{
+      const firstmsg = res.result.fulfillment.speech;  
+      this.updateData(firstmsg,'bot')
+    }).catch((error)=>{
+      this.updateData('No puedo entender lo que me dices', 'bot')  
+    })*/
 }
 
   /** talk(mgs? : string){
