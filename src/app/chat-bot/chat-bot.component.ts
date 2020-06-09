@@ -40,7 +40,7 @@ export class ChatBotComponent implements OnInit {
          this.services.onCLoseWindow();
      }else{
         let itemsFirst = [{
-             'chat':'!Hola¡ soy terapy_Bot, para ayudarte en lo que necesites.',
+             'chat':'!Hola¡ soy therapy_Bot, para ayudarte en lo que necesites.',
              'sentBy' : 'bot'
         },
         {
