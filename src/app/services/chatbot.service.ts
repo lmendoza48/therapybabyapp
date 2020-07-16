@@ -3,6 +3,7 @@ import { environment } from '../../environments/environment';
 
 import { ApiAiClient } from 'api-ai-javascript/es6/ApiAiClient';
 import { Chatbot } from '../model/chatbot';
+import { Subject, Observable } from 'rxjs';
  
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ export class ChatbotService {
   
   readonly token = environment.dialogFlow.angularBot;
   readonly client = new ApiAiClient({accessToken: this.token});
+  private chatmssgList$ = new Subject<Chatbot[]>();
 
   chatMssgList : Chatbot[] = [];
   flagChat : boolean = false;
@@ -18,17 +20,9 @@ export class ChatbotService {
   constructor() { }
 
   onSaveMessage(mgs : string){
-    /*if(!this.flagChat){
-      this.flagChat = true;
-      this.updateData(mgs, 'user');
-      mgs = 'buenos dias';
-    }else{
-      
-    }*/
     if(mgs != 'Terapia' && !mgs.includes('Contacto')){
        this.updateData(mgs, 'user');
-    }
-        
+    }   
     return this.client.textRequest(mgs)
         .then((res) => 
                 {
@@ -40,40 +34,50 @@ export class ChatbotService {
         });
 }
 
+onCLoseWindow(){
+    this.chatMssgList = [];
+    this.flagChat = false;
+}
+
+firstMsg(arrayD){
+  this.chatMssgList = arrayD;
+  this.chatmssgList$.next(this.chatMssgList);
+}
+
 
 updateData(msg? : string, sentBy? : string){
 
-  if(msg != undefined &&  sentBy != undefined )
+  if(msg != undefined &&  sentBy != undefined ){
       this.chatMssgList.push({
         sentBy: sentBy,
         chat: msg
-   })
+      });
 
+      this.chatmssgList$.next(this.chatMssgList);
+  }
   return this.chatMssgList;
 
 }
 
-onCLoseWindow(){
-    this.chatMssgList = [];
-    this.flagChat = false;
-
+getUpdateMsg$() : Observable<Chatbot[]>{
+  return this.chatmssgList$.asObservable();
 }
 
-firstMsg(arrayD){
-   this.chatMssgList = arrayD;
-     
-   /* return this.client.textRequest(msg).then((res)=>{
+
+  /** 
+   * used in method firstMsg()
+   * /* return this.client.textRequest(msg).then((res)=>{
       const firstmsg = res.result.fulfillment.speech;  
       this.updateData(firstmsg,'bot')
     }).catch((error)=>{
       this.updateData('No puedo entender lo que me dices', 'bot')  
-    })*/
-}
-
-  /** talk(mgs? : string){
+    })
+    
+    talk(mgs? : string){
     this.client.textRequest('nuevo')
           .then((res) => console.log(res))
           .catch((error) => console.log(error))
   }
   */
+
 }

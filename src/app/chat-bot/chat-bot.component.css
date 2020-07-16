@@ -33,6 +33,7 @@ form{
     left: 94%;
     top: 36rem;
     z-index: 100;
+    background: #6fcea5;
 }
 .exit-icon{
     position: relative;

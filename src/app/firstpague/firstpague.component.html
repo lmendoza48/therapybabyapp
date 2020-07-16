@@ -1,10 +1,20 @@
 <!--header-->
+<!-- <nav>
+  <div class="nav-wrapper">
+    <a  routerLink="/" class="brand-logo">Childrens & Therapy</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+  </div>
+</nav> -->
 <section class="header-section">
     <mat-grid-list cols="2" rowHeight="8:1">
         <mat-grid-tile>
             <ul class="menu">
                 <li>
-                    <button  class="animated bounce titleHeader" mat-button routerLink="/"> Childrens & Therapy</button>
+                    <button  class="animated bounce titleHeader" mat-button routerLink="/"> Home </button>
                 </li>
                  <li>
                       <svg  class="iconbabyfoot" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -14,22 +24,25 @@
                     
                      
                  </li>
-                 <li>
-                   <button mat-button routerLink = "/allInformation" class="temsBtn"> <img src="https://img.icons8.com/bubbles/50/000000/book.png"> <span> Temas </span> </button>
-                 </li>
-                 <li>
-                   <button mat-button class="btnGalery" routerLink="/galery"><img src="https://img.icons8.com/bubbles/50/000000/stack-of-photos.png"> <span> Galeria </span></button>                
-                 </li>
               </ul>
         </mat-grid-tile>
         <mat-grid-tile>
            <ul class="menuSocial">
-             <li>
+            <li>
+              <button mat-button routerLink = "/allInformation" class="temsBtn"> <img src="https://img.icons8.com/bubbles/50/000000/book.png"> <span> Temas </span> </button>
+            </li>
+            <li>
+              <button mat-button class="btnGalery" routerLink="/galery"><img src="https://img.icons8.com/bubbles/50/000000/stack-of-photos.png"> <span> Galeria </span></button>                
+            </li>
+            <li>
+              <button mat-button class="btnContact" routerLink = "/contactus" > <img src="https://img.icons8.com/office/40/000000/email.png"> Contacto </button> 
+            </li>
+            <!--  <li>
                 <a id="linkBtn1" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/oriana_itriago/?hl=es-la"> <img src="https://img.icons8.com/carbon-copy/30/000000/instagram-new.png"></a>
              </li>
              <li>
                 <a id="linkBtn2" matBadgeOverlap="false" target="_blank" rel="noopener noreferrer" href="https://es-la.facebook.com/" > <img src="https://img.icons8.com/wired/30/000000/facebook-new.png"></a>
-             </li>
+             </li> -->
            </ul>
         </mat-grid-tile>
 

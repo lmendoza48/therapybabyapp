@@ -13,6 +13,9 @@
     top: 0;
     background: white;
 }
+ul.menu {
+    margin-right: auto;
+}
 ul.menu li{
     display: inline-block;
     padding: 0 1em 0 0;
@@ -24,10 +27,6 @@ ul.menu li button.titleHeader{
     color: #EB6C8E;
 }
 
-ul.menu li button.temsBtn,.btnGalery{
-    height: 5rem;
-}
-
 ul.menu li .iconbabyfoot{
     position: relative;
     top: 1.5rem;
@@ -37,18 +36,23 @@ ul.menu li .iconbabyfoot{
 ul.menu li button.btntitleMenu{
     height: 3rem;
 }
-
+ul.menuSocial {
+    margin-right: auto;
+}
 ul.menuSocial li{
     display: inline-block;
     position: relative;
-    left: 16rem;
-    top: 1rem;
+    left: 12rem;
+}
+ul.menuSocial li button.temsBtn,.btnGalery,.btnContact{
+    height: 5rem;
 }
 
+/* 
 ul.menuSocial li a#linkBtn1{
     margin-right: 0.5rem
 }
-
+ */
 .header-mobile{
    display: none;
 }
@@ -76,5 +80,11 @@ ul.menuSocial li a#linkBtn1{
         position: relative;
         bottom: 4.4rem;
         margin-left: 16rem;
+    }
+    .menuMobil{
+        padding-top: 7px;
+    }
+    .mat-menu-panel{
+        margin-top: 9px;
     }
 }

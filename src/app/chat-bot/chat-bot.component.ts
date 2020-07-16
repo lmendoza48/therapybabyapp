@@ -3,6 +3,7 @@ import { ChatbotService } from '../services/chatbot.service';
 
 import { Chatbot } from '../model/chatbot';
 import { stringify } from 'querystring';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-chat-bot',
@@ -14,10 +15,15 @@ export class ChatBotComponent implements OnInit {
   chatMy : string = '';
   show : boolean = true;
   listChatMssg : Chatbot[];
+  MsgChats$ : Observable<Chatbot[]>;
 
   constructor( public services : ChatbotService ) { }
 
   ngOnInit() {
+    this.MsgChats$ = this.services.getUpdateMsg$();
+    this.MsgChats$.subscribe( chats =>{
+      this.listChatMssg = chats;
+    });
    
   }
 
@@ -29,7 +35,6 @@ export class ChatBotComponent implements OnInit {
       }else{
         this.services.onSaveMessage(this.chatMy);
       }
-      this.listChatMssg = this.services.updateData();
       this.chatMy = '';    
   }
 
@@ -47,7 +52,7 @@ export class ChatBotComponent implements OnInit {
           'chat':'presiona cualquiera de estos dos botones para continuar, o has me cualquier consulta.',
           'sentBy' : 'bot'
         }];
-         this.listChatMssg = itemsFirst;
+         //this.listChatMssg = itemsFirst;
          this.show = false;
          this.services.firstMsg(itemsFirst);
 

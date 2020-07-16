@@ -1,27 +1,28 @@
 section.sectFooterPague{
-    position: relative;
-    top: 8.5rem;
-    height: 8rem;
+/*     position: relative; */
+    /* top: 0.5rem; */
+    /* height: 50rem; */
     color: #EB6C8E;
-    border-top: solid 2px rgba(210, 215, 217, 0.75);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /* border-top: solid 2px rgba(210, 215, 217, 0.75); */
+/*     margin-left: 1rem;
+    margin-right: 1rem; */
+    text-align: center;
 }
 section ul.footer {
     list-style: none;
-    position: relative;
-    left: 31%;
-    width: 50%;
+/*     position: relative; */
+    /* left: 31%; */
+    /* width: 50%; */
+    height: 1rem;
 }
 section ul.footer li{
     display: inline-block;
     padding: 0 1em 0 0;
-    margin-top: 2rem;
+/*     margin-top: 2rem; */
 }
+
 .copyRight{
-    position: relative;
-    left: 26%;
-    width: 50%;
+    margin-top: 2rem;
 }
 
 .firstdivder{
@@ -35,14 +36,19 @@ section ul.footer li{
     display: none;
 }
 
+.location{
+    position: relative;
+    bottom: 1.5rem;
+}
+
 @media only screen and (max-width: 800px) {
     .sectFooterPague{
         display: none;
     }
     .sectFooterPagueMOBILE{
         display: block;
-        margin-top: 3rem;
-        border-top: solid 2px rgba(210, 215, 217, 0.75);
+/*         margin-top: 3rem;
+        border-top: solid 2px rgba(210, 215, 217, 0.75); */
     }
     .footerMobile{
        text-align: center;
