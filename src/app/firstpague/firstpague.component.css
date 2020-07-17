@@ -4,8 +4,6 @@
 }
 .header-section{
     border-bottom: solid 5px #f56a6a;
-    /*margin-left: 1rem;
-    margin-right: 1rem;*/
     position: fixed;
     z-index: 100;
     left: 0;
@@ -48,11 +46,6 @@ ul.menuSocial li button.temsBtn,.btnGalery,.btnContact{
     height: 5rem;
 }
 
-/* 
-ul.menuSocial li a#linkBtn1{
-    margin-right: 0.5rem
-}
- */
 .header-mobile{
    display: none;
 }
@@ -68,18 +61,14 @@ ul.menuSocial li a#linkBtn1{
         background: white;
         border-bottom: solid 5px #f56a6a;
     }
-    div.firstButtom{
+    div.mobilebuttonSocial{
         text-align: right;
         position: relative;
-        bottom: 2rem;
-        right: 2.5rem;
+        bottom: 38px;
         margin-left: 13rem;
     }
-    div.secondButtom{
-        text-align: right;
-        position: relative;
-        bottom: 4.4rem;
-        margin-left: 16rem;
+    div.mobilebuttonSocial a{
+        padding: 0 0.5em 0 0;
     }
     .menuMobil{
         padding-top: 7px;
@@ -87,4 +76,5 @@ ul.menuSocial li a#linkBtn1{
     .mat-menu-panel{
         margin-top: 9px;
     }
+
 }

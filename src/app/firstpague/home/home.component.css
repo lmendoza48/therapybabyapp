@@ -38,7 +38,7 @@ section ul.footer li{
 
 .location{
     position: relative;
-    bottom: 1.5rem;
+    bottom: 14px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -54,6 +54,7 @@ section ul.footer li{
        text-align: center;
        list-style: none;
        color: #EB6C8E;
+       margin:0rem;
        margin-right: 1rem;
     }
     .firstdivder{
@@ -64,6 +65,13 @@ section ul.footer li{
         top: 33rem;
         margin-left: 4rem;
         margin-right: 4rem;
+    }
+    .copyrightMobile{
+        font-size: 10px;
+    }
+
+    .mobileLocation{
+        font-size: 10px;
     }
 }
 
