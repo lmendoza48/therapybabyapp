@@ -9,14 +9,15 @@ import { MatSidenav } from '@angular/material';
 })
 export class FirstpagueComponent implements OnInit {
   
+  
+  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
+  reason = '';
+
   constructor(public router : Router) { }
 
   ngOnInit() {
   }
 
-  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
-
-  reason = '';
 
   close(reason: string) {
     this.reason = reason;
@@ -25,7 +26,10 @@ export class FirstpagueComponent implements OnInit {
 
 
 
-
+  openToggle(navig? : String){
+    this.sidenav.close();
+    this.router.navigate(['/'+navig]);
+  }
 
 
   

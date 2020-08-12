@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import {SlideshowModule} from 'ng-simple-slideshow';
 
@@ -25,6 +27,8 @@ import { GaleryIMGComponent } from './firstpague/galery-img/galery-img.component
 import { PopupIMGComponent } from './firstpague/galery-img/popup-img/popup-img.component';
 import { SecondSectionComponent } from './firstpague/second-section/second-section.component';
 import { ThirdSectionComponent } from './firstpague/third-section/third-section.component';
+
+import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 const routes : Routes = [
   {
@@ -76,7 +80,11 @@ const routes : Routes = [
     HttpClientModule,
     Ng2SearchPipeModule,
     SlideshowModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireAuthModule,
+    AngularFireFunctionsModule,
+    AngularFirestoreModule
+
   ],
   entryComponents:[
     PopupIMGComponent

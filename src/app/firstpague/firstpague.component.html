@@ -9,6 +9,38 @@
     </ul>
   </div>
 </nav> -->
+
+<mat-sidenav-container class="header-section">
+  <mat-sidenav #sidenav class="hiddenMenu">
+    <p><button mat-button class="homeBtn"   (click)="openToggle('')"><img src="https://img.icons8.com/cute-clipart/64/000000/home.png"/></button></p>
+    <p>  
+      <button mat-button (click)="openToggle('allInformation')" class="temsBtn"> <img src="https://img.icons8.com/bubbles/50/000000/book.png"> <span> Temas </span> </button>
+    </p>
+    <p>
+      <button mat-button class="btnGalery" (click)="openToggle('galery')"><img src="https://img.icons8.com/bubbles/50/000000/stack-of-photos.png"> <span> Galeria </span></button>
+    </p>
+    <p>
+      <button mat-button class="btnContact" (click)="openToggle('contactus')"> <img src="https://img.icons8.com/office/40/000000/email.png"> Contacto </button> 
+    </p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="newMenuMat">
+      <button  mat-button class="animated bounce titleHeader" (click)="sidenav.toggle()"> 
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="50" height="50"
+        viewBox="0 0 172 172"
+        style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M134.16,22.36c-0.94993,0 -1.72,0.77007 -1.72,1.72c0,0.94993 0.77007,1.72 1.72,1.72c0.94993,0 1.72,-0.77007 1.72,-1.72c0,-0.94993 -0.77007,-1.72 -1.72,-1.72z" fill="#d396a9"></path><path d="M86,20.64c-36.09733,0 -65.36,29.26267 -65.36,65.36c0,36.09733 29.26267,65.36 65.36,65.36c36.09733,0 65.36,-29.26267 65.36,-65.36c0,-36.09733 -29.26267,-65.36 -65.36,-65.36z" fill="#f9dbd2"></path><path d="M144.48,20.64c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88z" fill="#d396a9"></path><path d="M24.08,41.28c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44z" fill="#ee3e54"></path><path d="M134.16,129c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44zM29.24,127.28c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88z" fill="#fbcd59"></path><path d="M41.28,139.32c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44z" fill="#ee3e54"></path><path d="M114.38,130.72c-2.37482,0 -4.3,1.92518 -4.3,4.3c0,2.37482 1.92518,4.3 4.3,4.3c2.37482,0 4.3,-1.92518 4.3,-4.3c0,-2.37482 -1.92518,-4.3 -4.3,-4.3zM27.52,80.84c-0.94993,0 -1.72,0.77007 -1.72,1.72c0,0.94993 0.77007,1.72 1.72,1.72c0.94993,0 1.72,-0.77007 1.72,-1.72c0,-0.94993 -0.77007,-1.72 -1.72,-1.72z" fill="#ffffff"></path><path d="M147.92,51.6c-0.94993,0 -1.72,0.77007 -1.72,1.72c0,0.94993 0.77007,1.72 1.72,1.72c0.94993,0 1.72,-0.77007 1.72,-1.72c0,-0.94993 -0.77007,-1.72 -1.72,-1.72z" fill="#d396a9"></path><path d="M137.6,110.08c-1.89986,0 -3.44,1.54014 -3.44,3.44c0,1.89986 1.54014,3.44 3.44,3.44c1.89986,0 3.44,-1.54014 3.44,-3.44c0,-1.89986 -1.54014,-3.44 -3.44,-3.44z" fill="#ffffff"></path><path d="M45.924,51.084h80.152v13.072h-80.152z" fill="#a1d3a2"></path><path d="M124.872,52.288v10.664h-77.744v-10.664l77.744,0M127.28,49.88h-82.56v15.48h82.56v-15.48z" fill="#472b29"></path><path d="M45.924,78.604h80.152v13.072h-80.152z" fill="#a1d3a2"></path><path d="M124.872,79.808v10.664h-77.744v-10.664h77.744M127.28,77.4h-82.56v15.48h82.56v-15.48z" fill="#472b29"></path><path d="M45.924,106.124h80.152v13.072h-80.152z" fill="#a1d3a2"></path><path d="M124.872,107.328v10.664h-77.744v-10.664l77.744,0M127.28,104.92h-82.56v15.48h82.56v-15.48zM102.34,87.72h-51.6c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h51.6c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86zM121.432,87.72h-1.548c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h1.548c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86z" fill="#472b29"></path><path d="M124.7,115.24h-67.08c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h67.08c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86zM52.288,115.24h-1.548c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h1.548c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86z" fill="#472b29"></path><g fill="#472b29"><path d="M114.38,60.2h-67.08c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h67.08c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86z"></path></g><g fill="#472b29"><path d="M121.26,60.2h-1.548c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h1.548c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86z"></path></g><g fill="#472b29"><path d="M115.068,87.72h-5.848c-0.516,0 -0.86,-0.344 -0.86,-0.86c0,-0.516 0.344,-0.86 0.86,-0.86h5.848c0.516,0 0.86,0.344 0.86,0.86c0,0.516 -0.344,0.86 -0.86,0.86z"></path></g></g></g></svg>
+      </button>
+    </div>
+    <section>
+      <router-outlet></router-outlet>
+    </section> 
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<!-- 
 <section class="header-section">
     <mat-grid-list cols="2" rowHeight="8:1">
         <mat-grid-tile>
@@ -41,10 +73,10 @@
         </mat-grid-tile>
 
     </mat-grid-list>
-</section> 
+</section>  -->
 
 <!-- header mobile-->
-<mat-toolbar class="header-mobile">
+<!-- <mat-toolbar class="header-mobile">
     <button mat-icon-button [matMenuTriggerFor]="menu" class="menuMobil">
         <i class="material-icons"> list</i>
     </button>
@@ -78,7 +110,7 @@
 
       </a> 
     </div>
-</mat-toolbar>
-<section>
+</mat-toolbar> -->
+<!-- <section>
   <router-outlet></router-outlet>
-</section> 
+</section>  -->

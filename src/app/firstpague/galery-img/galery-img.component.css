@@ -4,7 +4,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin-top: 5.2rem;
+    margin-top: 5rem;
    /* border-top-left-radius: 2rem;
     border-top-right-radius: 2rem; */
     padding-bottom: 0.8rem;
@@ -34,7 +34,7 @@ button:hover{
 
 @media only screen and (max-width: 800px) {
     .galeryImgData{
-        margin-top: 0rem;
+        margin-top: 3rem;
         padding-top: 3rem;
         padding-bottom: 1rem;
         height: auto;

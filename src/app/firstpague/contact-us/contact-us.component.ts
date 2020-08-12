@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
 import { NgForm, FormControl, FormGroup } from '@angular/forms';
 import { SavemessageService } from 'src/app/services/savemessage.service';
+import { MessagesDatosService } from 'src/app/services/messages-datos.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -22,7 +23,8 @@ export class ContactUsComponent implements OnInit {
        
 
 
-  constructor(public dataServiceMessage : SavemessageService, private snackBar : MatSnackBar) { }
+  constructor(public dataServiceMessage : SavemessageService, private snackBar : MatSnackBar,
+    public dataService : MessagesDatosService) { }
 
   ngOnInit() {
     //necessary for initializer object firebase
@@ -71,6 +73,17 @@ export class ContactUsComponent implements OnInit {
     this.snackBar.open(message, action, {
       duration: 3000,
     });
+  }
+
+  sendEmailBYNodejs(form?: NgForm){
+    this.dataService.sendMessage(form.value).subscribe((datos)=>{
+      form.reset();
+      console.log('datos enviados ',datos);
+   });
+  }
+
+  sendEmailByFirestore(form?: NgForm){
+    this.dataService.sendEmailWithFirestore(form.value);
   }
 
   /*
